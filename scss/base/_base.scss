@@ -1,4 +1,87 @@
 body {
-  font-family: var(--font-family);
   color: var(--body-color);
+  font-weight: 500;
+  font-size: var(--body-fs);
+  font-family: var(--font-family);
+}
+
+.main-title {
+  font-size: var(--main-title-fs);
+  line-height: 100%;
+  letter-spacing: -0.04em;
+}
+
+.section-title {
+  font-size: var(--section-title-fs);
+  line-height: 120%;
+  letter-spacing: -0.02em;
+}
+
+
+.section-subtitle {
+  font-size: var(--section-subtitle-fs);
+}
+
+.quote {
+  font-size: var(--quote-fs);
+}
+
+.card-title-large {
+  font-size: var(--card-title-large-fs);
+}
+
+
+.section-description {
+  color: var(--davysGrey-color);
+  font-size: var(----section-description-fs);
+  line-height: 160%;
+}
+
+.main-title,
+.section-title,
+.section-description {
+  text-align: center;
+}
+
+.section-subtitle,
+.quote,
+.card-title-large {
+  line-height: 140%;
+  letter-spacing: -0.02em;
+}
+
+.button {
+  height: 62px;
+  padding-inline: 36px;
+  border: 2px solid var(--black-color);
+  border-radius: 8px;
+  background: var(--button-bg-color);
+  color: var(--white-color);
+  box-shadow: 6px 6px 0 0 rgba(0, 0, 0, 0.25);
+  font-weight: 700;
+  font-size: var(--button-fs);
+  line-height: 160%;
+  text-transform: uppercase;
+  transition: box-shadow .2s ease;
+}
+
+.button:active {
+  box-shadow: 6px 6px 0 0 rgba(0, 0, 0, 0);
+}
+
+.button--transparent {
+  background-color: var(--button-bg-transparent);
+  color: var(--black-color);
+}
+
+.card-caption,
+.small-text {
+  font-weight: 500;
+  font-size: clamp(0.813rem, 0.759rem + 0.268vw, 1rem);
+  line-height: 160%;
+  color: var(--davysGrey-color);
+}
+
+.orange-text {
+  color: var(--vermillion-color);
 }

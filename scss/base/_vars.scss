@@ -3,6 +3,7 @@
 
     // colors
     --black-color: #000000;
+    --white-color: #ffffff;
     --davysGrey-color: #4D4D4D;
     --vermillion-color: #CD4631;
     --pewterBlue-color: #81ADC8;
@@ -10,4 +11,28 @@
     --aliceBlue-color: #EDF3F7;
 
     --body-color: #000000;
+    --button-bg-color: #000000;
+    --button-bg-transparent: rgba(0, 0, 0, 0);
+
+    // fonts
+    //14px 13px 16px
+    --body-fs: clamp(0.875rem, 0.839rem + 0.179vw, 1rem);
+    //36px 18px 96px
+    --main-title-fs: clamp(2.25rem, 1.179rem + 5.357vw, 6rem);
+    //26px 16px 59px
+    --section-title-fs: clamp(1.625rem, 1.036rem + 2.946vw, 3.688rem);
+    //24px 20px 36px
+    --section-subtitle-fs: clamp(1.5rem, 1.274rem + 1.129vw, 2.291rem);
+    //24px 20px 36px
+    --quote-fs: clamp(1.5rem, 1.274rem + 1.129vw, 2.291rem);
+    //18px 16px 22.65px
+    --card-title-small-fs: clamp(1.125rem, 1.042rem + 0.415vw, 1.416rem);
+    //24px 20px 36px
+    --card-title-large-fs: clamp(1.5rem, 1.274rem + 1.129vw, 2.291rem);
+    //13px 12px 16px
+    --card-caption-fs: clamp(0.813rem, 0.759rem + 0.268vw, 1rem);
+    //12px 11.4px 14px
+    --button-fs: clamp(0.75rem, 0.714rem + 0.179vw, 0.875rem);
+    --section-description-fs: clamp(1.125rem, 1.054rem + 0.357vw, 1.375rem);
+
 }
