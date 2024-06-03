@@ -177,8 +177,10 @@ svg * {
   --pewterBlue-color: #81ADC8;
   --champagne-color: #F7EDE8;
   --aliceBlue-color: #EDF3F7;
+  --body-color: #000000;
 }
 
 body {
   font-family: var(--font-family);
+  color: var(--body-color);
 }
