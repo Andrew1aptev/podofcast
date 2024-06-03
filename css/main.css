@@ -171,6 +171,12 @@ svg * {
 }
 :root {
   --font-family: "Montserrat Alternates", sans-serif;
+  --black-color: #000000;
+  --davysGrey-color: #4D4D4D;
+  --vermillion-color: #CD4631;
+  --pewterBlue-color: #81ADC8;
+  --champagne-color: #F7EDE8;
+  --aliceBlue-color: #EDF3F7;
 }
 
 body {
