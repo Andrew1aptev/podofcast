@@ -383,3 +383,58 @@ body {
   width: 74px;
   height: 74px;
 }
+
+.hero {
+  padding-top: 64px;
+}
+
+.hero__container {
+  position: relative;
+}
+
+.hero__container::before {
+  position: absolute;
+  content: "";
+  background-image: url("../../img/hero/shape-swirl.svg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 629px;
+  height: 592px;
+  left: -607px;
+  top: -104px;
+}
+
+.hero__container::after {
+  position: absolute;
+  content: "";
+  background-image: url("../../img/hero/stars.svg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 155px;
+  height: 217px;
+  right: -65px;
+  top: 73px;
+}
+
+.hero__title {
+  max-width: 513px;
+  margin-bottom: 40px;
+}
+
+.hero__description {
+  max-width: 374px;
+  margin-bottom: 60px;
+}
+
+.hero__title,
+.hero__description,
+.hero__button {
+  margin-inline: auto;
+}
+
+.hero__button {
+  display: block;
+  margin-bottom: 120px;
+}
