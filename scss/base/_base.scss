@@ -3,6 +3,13 @@ body {
   font-weight: 500;
   font-size: var(--body-fs);
   font-family: var(--font-family);
+  background-color: var(--champagne-color);
+}
+
+.container {
+  max-width: 1190px;
+  margin: 0 auto;
+  padding-inline: 15px;
 }
 
 .main-title {
@@ -62,11 +69,15 @@ body {
   font-size: var(--button-fs);
   line-height: 160%;
   text-transform: uppercase;
-  transition: box-shadow .2s ease;
+  transition: all .2s ease;
 }
 
 .button:active {
   box-shadow: 6px 6px 0 0 rgba(0, 0, 0, 0);
+}
+
+.button:hover {
+  background-color: var(--vermillion-color);
 }
 
 .button--transparent {

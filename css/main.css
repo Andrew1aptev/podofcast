@@ -198,6 +198,13 @@ body {
   font-weight: 500;
   font-size: var(--body-fs);
   font-family: var(--font-family);
+  background-color: var(--champagne-color);
+}
+
+.container {
+  max-width: 1190px;
+  margin: 0 auto;
+  padding-inline: 15px;
 }
 
 .main-title {
@@ -255,11 +262,15 @@ body {
   font-size: var(--button-fs);
   line-height: 160%;
   text-transform: uppercase;
-  transition: box-shadow 0.2s ease;
+  transition: all 0.2s ease;
 }
 
 .button:active {
   box-shadow: 6px 6px 0 0 rgba(0, 0, 0, 0);
+}
+
+.button:hover {
+  background-color: var(--vermillion-color);
 }
 
 .button--transparent {
@@ -277,4 +288,98 @@ body {
 
 .orange-text {
   color: var(--vermillion-color);
+}
+
+.header {
+  padding-top: 24px;
+}
+
+.header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__row {
+  display: flex;
+  -moz-column-gap: 304px;
+       column-gap: 304px;
+  align-items: center;
+}
+
+.header__nav-list {
+  display: flex;
+  -moz-column-gap: 60px;
+       column-gap: 60px;
+}
+
+.header__nav-item {
+  position: relative;
+}
+
+.header__nav-link {
+  font-weight: 700;
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.2s ease;
+}
+
+.header__nav-item--arrow-down::after {
+  content: "";
+  position: absolute;
+  background-image: url("./../img/header/arrow-down.svg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 16px;
+  height: 16px;
+  right: -50%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.header__nav-link:hover {
+  color: var(--vermillion-color);
+}
+
+.header__buttons {
+  display: flex;
+  gap: 20px;
+}
+
+.header__link {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  box-shadow: 6px 6px 0 0 rgba(0, 0, 0, 0);
+  transition: all 0.2s ease;
+}
+
+.header__link:hover {
+  color: var(--white-color);
+  background-color: var(--vermillion-color);
+}
+
+.header__link:active {
+  transform: scale(0.9);
+}
+
+.header__link,
+.header__button {
+  height: 41px;
+}
+
+.logo {
+  display: inline-block;
+}
+
+.logo__link {
+  display: block;
+  background-image: url("./../img/logo.svg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 74px;
+  height: 74px;
 }
