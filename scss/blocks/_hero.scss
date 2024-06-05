@@ -16,7 +16,7 @@
     transform: translateX(50%);
     width: 150px;
     height: 150px;
-    z-index: -1;
+    z-index: 1;
 }
 
 .hero__container {
@@ -100,9 +100,3 @@
     width: 275px;
     height: 84px;
 }
-
-.hero__support-link--spotify {}
-
-.hero__support-link--googlePodcasts {}
-
-.hero__support-link--youtube {}
