@@ -1,5 +1,22 @@
 .hero {
     padding-top: 64px;
+    padding-bottom: 140px;
+    position: relative;
+}
+
+.hero::after {
+    content: "";
+    position: absolute;
+    background-image: url('../../img/hero/orange-scribble.svg');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    bottom: -75px;
+    right: 50%;
+    transform: translateX(50%);
+    width: 150px;
+    height: 150px;
+    z-index: -1;
 }
 
 .hero__container {
@@ -17,6 +34,7 @@
     height: 592px;
     left: -430px;
     top: -104px;
+    z-index: -1;
 }
 
 .hero__container::after {
@@ -52,3 +70,39 @@
     display: block;
     margin-bottom: 120px;
 }
+
+.hero__support {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-top: 1.5px solid var(--black-color);
+    border-bottom: 1.5px solid var(--black-color);
+}
+
+.hero__support-text {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 140%;
+    letter-spacing: -0.02em;
+}
+
+.hero__support-links {
+    display: flex;
+
+}
+
+.hero__support-link {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 275px;
+    height: 84px;
+}
+
+.hero__support-link--spotify {}
+
+.hero__support-link--googlePodcasts {}
+
+.hero__support-link--youtube {}

@@ -4,6 +4,7 @@ body {
   font-size: var(--body-fs);
   font-family: var(--font-family);
   background-color: var(--champagne-color);
+  overflow-x: hidden;
 }
 
 .container {
@@ -11,6 +12,7 @@ body {
   margin: 0 auto;
   padding-inline: 15px;
 }
+
 
 .main-title {
   font-size: var(--main-title-fs);
