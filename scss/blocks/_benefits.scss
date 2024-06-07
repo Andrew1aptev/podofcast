@@ -1,0 +1,67 @@
+.benefits {
+    background-color: var(--white-color);
+}
+
+.benefits__container {
+    display: flex;
+    flex-direction: column;
+}
+
+.benefits__title {
+    max-width: 662px;
+    margin-inline: auto;
+    position: relative;
+}
+
+
+.benefits__title::after {
+    content: "";
+    background-image: url('../../img/benefits/Scribble-benefits.svg');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 240px;
+    height: 240px;
+    position: absolute;
+    right: -101px;
+    top: -137px;
+}
+
+.benefits__grid {
+    display: grid;
+    column-gap: 20px;
+    row-gap: 80px;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-bottom: 100px;
+}
+
+.benefits__card-img {
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 78px;
+    height: 78px;
+    margin-inline: auto;
+    margin-bottom: 30px;
+}
+
+.benefits__card-img--1 {
+    background-image: url('./../../img/benefits/Scribble-card.svg');
+}
+
+.benefits__card-title {
+    margin-bottom: 10px;
+}
+
+.benefits__card-title,
+.benefits__card-text {
+    text-align: center;
+}
+
+.benefits__link {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    margin-inline: auto;
+}

@@ -1,0 +1,130 @@
+.episodes {
+    background-color: var(--champagne-color);
+}
+
+.episodes__container {
+    display: flex;
+    flex-direction: column;
+}
+
+.episodes__grid {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-bottom: 100px;
+}
+
+.episodes__grid::after {
+    content: "";
+    position: absolute;
+    top: -158px;
+    right: -158px;
+    width: 240px;
+    height: 240px;
+    background-image: url('../../img/episodes/sparkle-decor.svg');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.episodes__card {
+    padding: 16px;
+    border: 2px solid var(--black-color);
+    border-radius: 12px;
+    background-color: var(--white-color);
+    transition: all .2s ease;
+}
+
+.episodes__card:hover {
+    color: var(--vermillion-color);
+    box-shadow: 10px 10px 0 0 var(--pewterBlue-color);
+}
+
+.episodes__card-top {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.episodes__card-img {
+    width: 166px;
+    height: 166px;
+    padding: 10px;
+}
+
+.episodes__card-content {
+    max-width: 352px;
+}
+
+.episodes__card-number {
+    margin-bottom: 4px;
+    color: var(--vermillion-color);
+    font-weight: 700;
+}
+
+.episodes__card-link {
+    display: inline-block;
+    padding-bottom: 15px;
+    border-bottom: 0.5px solid var(--davysGrey-color);
+    color: inherit;
+    text-decoration: none;
+}
+
+.episodes__card-title {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 140%;
+    letter-spacing: -0.02em;
+}
+
+.episodes__card-description {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.episodes__card-bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+.episodes__card-tags {
+    display: flex;
+    gap: 6px;
+}
+
+.episodes__card-tag {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 6px 12px;
+    border: 1px solid var(--davysGrey-color);
+    border-radius: 4px;
+    color: var(--davysGrey-color);
+    text-decoration: none;
+    transition: all .2s ease;
+}
+
+.episodes__card-tag:hover {
+    color: var(--vermillion-color);
+}
+
+.episodes__card-authors {
+    display: flex;
+    align-items: center;
+}
+
+.episodes__card-hosted {
+    margin-right: 10px;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 160%;
+}
+
+.episodes__link-all {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    text-decoration: none;
+}

@@ -1,31 +1,23 @@
 .feedback {
-    padding-top: 140px;
     padding-bottom: 100px;
     background-color: var(--aliceBlue-color);
-    position: relative;
-}
-
-.feedback::after {
-    content: "";
-    background-image: url('../../img/feedback/black-scribble.svg');
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    bottom: -75px;
-    right: 50%;
-    transform: translateX(50%);
-    width: 150px;
-    height: 150px;
-    z-index: 1;
-    position: absolute;
 }
 
 .feedback__title {
-    margin-bottom: 20px;
+    position: relative;
 }
 
-.feedback__description {
-    margin-bottom: 100px;
+.feedback__title::before {
+    content: "";
+    background-image: url('../../img/feedback/Sparkle.svg');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 105px;
+    height: 105px;
+    position: absolute;
+    left: 152px;
+    top: -65px;
 }
 
 .feedback-slider {
@@ -42,7 +34,6 @@
     border-radius: 8px;
 }
 
-.feedback-slider__wrapper {}
 
 .feedback-slider__text {
     margin-bottom: 32px;

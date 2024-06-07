@@ -1,24 +1,7 @@
 .about {
     background-color: var(--white-color);
-    padding-top: 140px;
-    padding-bottom: 140px;
-    position: relative;
 }
 
-.about::after {
-    content: "";
-    background-image: url('../../img/about/black-scribble.svg');
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    bottom: -75px;
-    right: 50%;
-    transform: translateX(50%);
-    width: 150px;
-    height: 150px;
-    z-index: 1;
-    position: absolute;
-}
 
 .about__title {
     margin: 0 auto;

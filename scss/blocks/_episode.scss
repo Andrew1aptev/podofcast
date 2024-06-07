@@ -1,0 +1,48 @@
+.episode__card-img {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 12px;
+    text-decoration: none;
+    padding: 20px;
+}
+
+.episode__card-img--1 {
+    background-image: url('../../img/hero/slide-bg-1.png');
+}
+
+.episode__card-img--2 {
+    background-image: url('../../img/hero/slide-bg-2.jpg');
+}
+
+.episode__card-img--3 {
+    background-image: url('../../img/hero/silde-bg-3.jpg');
+}
+
+.episode__card-img--4 {
+    background-image: url('../../img/hero/slide-bg-4.jpg');
+}
+
+.episode__card-img--5 {
+    background-image: url('../../img/hero/slide-bg-5.jpg');
+}
+
+.episode__platform {
+    display: flex;
+    column-gap: 10px;
+    align-self: flex-end;
+    color: white;
+}
+
+.episode__text {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 140%;
+    letter-spacing: -0.08em;
+    color: var(--pewterBlue-color);
+}
