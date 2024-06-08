@@ -20,3 +20,10 @@ const feedbackSlider = new Swiper(".feedback-slider", {
     prevEl: ".feedback-slider__button-next",
   },
 });
+
+const header = document.querySelector(".header");
+const burgerButton = document.querySelector(".header__mobile-button");
+
+burgerButton.addEventListener("click", ()=> {
+  header.classList.toggle("open");
+})

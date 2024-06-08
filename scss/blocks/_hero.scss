@@ -19,7 +19,7 @@
     height: 592px;
     left: -430px;
     top: -104px;
-    z-index: -1;
+    z-index: 1;
 }
 
 .hero__container::after {
@@ -33,6 +33,22 @@
     height: 217px;
     right: -65px;
     top: 73px;
+}
+
+@media only screen and (max-width: 570px) {
+    .hero__container::before {
+        width: 209px;
+        height: 200px;
+        left: -115px;
+        top: 85px;
+    }
+
+    .hero__container::after {
+        width: 90px;
+        height: 110px;
+        right: -5px;
+        top: 162px;
+    }
 }
 
 .hero__title {

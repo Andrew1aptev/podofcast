@@ -1,10 +1,38 @@
 .download {
     background-color: var(--aliceBlue-color);
+    overflow: hidden;
 }
 
 .download__container {
     display: flex;
     flex-direction: column;
+    position: relative;
+}
+
+.download__container::before {
+    content: "";
+    background-image: url('./../img/download/left-decor-image.webp');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 507px;
+    height: 970px;
+    position: absolute;
+    left: -181px;
+    bottom: -610px;
+}
+
+.download__container::after {
+    content: "";
+    background-image: url('./../img/download/right-decor-image.webp');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 730px;
+    height: 877px;
+    position: absolute;
+    right: -482px;
+    bottom: -325px;
 }
 
 .download__app-status {

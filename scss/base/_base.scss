@@ -6,9 +6,10 @@ body {
   background-color: var(--white-color);
 }
 
-body,
-.main {
-  overflow-x: hidden;
+.page__wrapper {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
 }
 
 .container {
