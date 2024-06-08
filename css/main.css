@@ -1013,11 +1013,11 @@ body {
 }
 
 .scribble-decor::after {
-  background-image: url("../../img/black-scribble.svg");
+  background-image: url("./../img/black-scribble.svg");
 }
 
 .scribble-decor-orange::after {
-  background-image: url("../../img/orange-scribble.svg");
+  background-image: url("./../img/orange-scribble.svg");
 }
 
 .main-title {
@@ -1305,7 +1305,7 @@ body {
 .hero__container::before {
   position: absolute;
   content: "";
-  background-image: url("../../img/hero/shape-swirl.svg");
+  background-image: url("./../img/hero/shape-swirl.svg");
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -1319,7 +1319,7 @@ body {
 .hero__container::after {
   position: absolute;
   content: "";
-  background-image: url("../../img/hero/stars.svg");
+  background-image: url("./../img/hero/stars.svg");
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -1436,11 +1436,11 @@ body {
 }
 
 .about__content-img--1 {
-  background-image: url("../../img/about/picture-1.svg");
+  background-image: url("./../img/about/picture-1.svg");
 }
 
 .about__content-img--2 {
-  background-image: url("../../img/about/picture-2.svg");
+  background-image: url("./../img/about/picture-2.svg");
 }
 
 .about__content-text {
@@ -1470,7 +1470,7 @@ body {
 }
 
 .quote::before {
-  background-image: url("../../img/quote/swirl-decor.svg");
+  background-image: url("./../img/quote/swirl-decor.svg");
   width: 120px;
   height: 120px;
   left: -60px;
@@ -1478,7 +1478,7 @@ body {
 }
 
 .quote::after {
-  background-image: url("../../img/quote/star-decor.svg");
+  background-image: url("./../img/quote/star-decor.svg");
   width: 200px;
   height: 200px;
   top: -60px;
@@ -1535,7 +1535,7 @@ body {
 
 .feedback__title::before {
   content: "";
-  background-image: url("../../img/feedback/Sparkle.svg");
+  background-image: url("./../img/feedback/Sparkle.svg");
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -1605,11 +1605,11 @@ body {
 }
 
 .feedback-slider__button-prev {
-  background-image: url("../../img/feedback/arrow-left.svg");
+  background-image: url("./../img/feedback/arrow-left.svg");
 }
 
 .feedback-slider__button-next {
-  background-image: url("../../img/feedback/arrow-right.svg");
+  background-image: url("./../img/feedback/arrow-right.svg");
 }
 
 .benefits {
@@ -1629,7 +1629,7 @@ body {
 
 .benefits__title::after {
   content: "";
-  background-image: url("../../img/benefits/Scribble-benefits.svg");
+  background-image: url("./../img/benefits/Scribble-benefits.svg");
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -1660,7 +1660,7 @@ body {
 }
 
 .benefits__card-img--1 {
-  background-image: url("./../../img/benefits/Scribble-card.svg");
+  background-image: url("./../img/benefits/Scribble-card.svg");
 }
 
 .benefits__card-title {
@@ -1695,23 +1695,23 @@ body {
 }
 
 .episode__card-img--1 {
-  background-image: url("../../img/hero/slide-bg-1.webp");
+  background-image: url("./../img/hero/slide-bg-1.webp");
 }
 
 .episode__card-img--2 {
-  background-image: url("../../img/hero/slide-bg-2.webp");
+  background-image: url("./../img/hero/slide-bg-2.webp");
 }
 
 .episode__card-img--3 {
-  background-image: url("../../img/hero/silde-bg-3.webp");
+  background-image: url("./../img/hero/silde-bg-3.webp");
 }
 
 .episode__card-img--4 {
-  background-image: url("../../img/hero/slide-bg-4.webp");
+  background-image: url("./../img/hero/slide-bg-4.webp");
 }
 
 .episode__card-img--5 {
-  background-image: url("../../img/hero/slide-bg-5.webp");
+  background-image: url("./../img/hero/slide-bg-5.webp");
 }
 
 .episode__platform {
@@ -1754,7 +1754,7 @@ body {
   right: -158px;
   width: 240px;
   height: 240px;
-  background-image: url("../../img/episodes/sparkle-decor.svg");
+  background-image: url("./../img/episodes/sparkle-decor.svg");
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -1889,7 +1889,7 @@ body {
 
 .price__grid::before {
   content: "";
-  background-image: url("../../img/price/swirl-decor.svg");
+  background-image: url("./../img/price/swirl-decor.svg");
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -1903,7 +1903,7 @@ body {
 
 .price__grid::after {
   content: "";
-  background-image: url("../../img/price/star-decor.svg");
+  background-image: url("./../img/price/star-decor.svg");
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -2192,7 +2192,7 @@ body {
   right: -75px;
   width: 120px;
   height: 120px;
-  background-image: url("../../img/download/sparkle-decor.svg");
+  background-image: url("./../img/download/sparkle-decor.svg");
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
