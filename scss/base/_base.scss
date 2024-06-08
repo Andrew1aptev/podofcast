@@ -22,13 +22,14 @@ body,
   padding-bottom: 140px;
 }
 
+.scribble-decor-orange,
 .scribble-decor {
   position: relative;
 }
 
-.scribble-decor::after {
+.scribble-decor::after,
+.scribble-decor-orange::after {
   content: "";
-  background-image: url('../../img/black-scribble.svg');
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -39,6 +40,15 @@ body,
   height: 150px;
   z-index: 1;
   position: absolute;
+}
+
+.scribble-decor::after {
+  background-image: url('../../img/black-scribble.svg');
+}
+
+.scribble-decor-orange::after {
+  background-image: url('../../img/orange-scribble.svg');
+
 }
 
 .main-title {

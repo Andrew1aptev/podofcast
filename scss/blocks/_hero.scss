@@ -4,21 +4,6 @@
     background-color: var(--champagne-color);
 }
 
-.hero::after {
-    content: "";
-    position: absolute;
-    background-image: url('../../img/hero/orange-scribble.svg');
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    bottom: -75px;
-    right: 50%;
-    transform: translateX(50%);
-    width: 150px;
-    height: 150px;
-    z-index: 1;
-}
-
 .hero__container {
     position: relative;
 }

@@ -1,5 +1,6 @@
 .logo {
-    display: inline-block;
+    display: inline-flex;
+    column-gap: 24px;
 }
 
 .logo__link {
@@ -10,4 +11,11 @@
     background-repeat: no-repeat;
     width: 74px;
     height: 74px;
+}
+
+.logo__year {
+    color: var(--davysGrey-color);
+    font-size: 12px;
+    line-height: 160%;
+    align-self: end;
 }

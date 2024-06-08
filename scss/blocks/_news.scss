@@ -1,0 +1,110 @@
+.news {}
+
+.news__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    position: relative;
+}
+
+@media only screen and (max-width: 1024px) {
+    .news__grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+.news__grid::before,
+.news__grid::after {
+    content: "";
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    z-index: -1;
+}
+
+.news__grid::before {
+    width: 225px;
+    height: 200px;
+    background-image: url('./../img/news/star-decor.svg');
+    left: -90px;
+    top: -74px;
+}
+
+.news__grid::after {
+    width: 240px;
+    height: 240px;
+    background-image: url('./../img/news/Scribble-decor.svg');
+    bottom: -150px;
+    right: -130px;
+}
+
+.news__card {
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    border: 2px solid var(--black-color);
+    border-radius: 8px;
+    transition: all 0.2s ease;
+    background-color: var(--white-color);
+}
+
+.news__card:hover {
+    box-shadow: 10px 10px 0px 0px rgba(0, 0, 0, 1)
+}
+
+.news__card:hover .news__card-title {
+    color: var(--vermillion-color);
+}
+
+.news__card-img {
+    margin-bottom: 40px;
+    border-radius: 8px;
+}
+
+.news__card-about {
+    margin-bottom: 6px;
+}
+
+.news__card-link {
+    text-decoration: none;
+    color: currentColor;
+    margin-bottom: 20px;
+}
+
+.news__card-title {
+    margin-bottom: 20px;
+    transition: all 0.2s ease;
+
+}
+
+.news__card-description {
+    flex-grow: 1;
+    padding-bottom: 26px;
+    margin-bottom: 20px;
+    border-bottom: 0.5px solid var(--davysGrey-color);
+}
+
+.news__card-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.news__card-tags {
+    display: flex;
+    gap: 6px;
+    color: var(--davysGrey-color);
+}
+
+.news__card-tag {
+    padding: 6px 12px;
+    border-radius: 8px;
+    border: 1px solid var(--davysGrey-color);
+    color: currentColor;
+    text-decoration: none;
+    transition: all .2s ease;
+}
+
+.news__card-tag:hover {
+    color: var(--vermillion-color);
+}
