@@ -20,7 +20,7 @@
 }
 
 .quote::before {
-    background-image: url('../../img/quote/swirl-decor.svg');
+    background-image: url('./../img/quote/swirl-decor.svg');
     width: 120px;
     height: 120px;
     left: -60px;
@@ -28,7 +28,7 @@
 }
 
 .quote::after {
-    background-image: url('../../img/quote/star-decor.svg');
+    background-image: url('./../img/quote/star-decor.svg');
     width: 200px;
     height: 200px;
     top: -60px;

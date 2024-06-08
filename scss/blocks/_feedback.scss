@@ -9,7 +9,7 @@
 
 .feedback__title::before {
     content: "";
-    background-image: url('../../img/feedback/Sparkle.svg');
+    background-image: url('./../img/feedback/Sparkle.svg');
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -81,9 +81,9 @@
 }
 
 .feedback-slider__button-prev {
-    background-image: url('../../img/feedback/arrow-left.svg');
+    background-image: url('./../img/feedback/arrow-left.svg');
 }
 
 .feedback-slider__button-next {
-    background-image: url('../../img/feedback/arrow-right.svg');
+    background-image: url('./../img/feedback/arrow-right.svg');
 }

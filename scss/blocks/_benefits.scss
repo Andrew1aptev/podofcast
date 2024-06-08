@@ -16,7 +16,7 @@
 
 .benefits__title::after {
     content: "";
-    background-image: url('../../img/benefits/Scribble-benefits.svg');
+    background-image: url('./../img/benefits/Scribble-benefits.svg');
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -46,7 +46,7 @@
 }
 
 .benefits__card-img--1 {
-    background-image: url('./../../img/benefits/Scribble-card.svg');
+    background-image: url('./../img/benefits/Scribble-card.svg');
 }
 
 .benefits__card-title {
