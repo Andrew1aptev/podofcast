@@ -72,6 +72,12 @@
     margin-bottom: 120px;
 }
 
+@media only screen and (max-width: 1023px) {
+    .hero__button {
+        margin-bottom: 80px;
+    }
+}
+
 .hero__support {
     display: flex;
     align-items: center;

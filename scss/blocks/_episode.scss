@@ -41,7 +41,7 @@
 
 .episode__text {
     font-weight: 700;
-    font-size: 36px;
+    font-size: var(--card-title-large-fs);
     line-height: 140%;
     letter-spacing: -0.08em;
     color: var(--pewterBlue-color);

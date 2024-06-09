@@ -1379,6 +1379,11 @@ body {
   margin-bottom: 120px;
 }
 
+@media only screen and (max-width: 1023px) {
+  .hero__button {
+    margin-bottom: 80px;
+  }
+}
 .hero__support {
   display: flex;
   align-items: center;
@@ -1419,6 +1424,22 @@ body {
   border-radius: 12px;
 }
 
+@media only screen and (max-width: 1024px) {
+  .podcast-slider {
+    height: 300px;
+  }
+  .podcast-slider__card {
+    width: 300px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .podcast-slider {
+    height: 250px;
+  }
+  .podcast-slider__card {
+    width: 250px;
+  }
+}
 .about {
   background-color: var(--white-color);
 }
@@ -1739,7 +1760,7 @@ body {
 
 .episode__text {
   font-weight: 700;
-  font-size: 36px;
+  font-size: var(--card-title-large-fs);
   line-height: 140%;
   letter-spacing: -0.08em;
   color: var(--pewterBlue-color);

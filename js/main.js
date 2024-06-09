@@ -3,9 +3,17 @@ const swiper = new Swiper(".swiper", {
   direction: "horizontal",
   centeredSlides: true,
   slidesPerView: "auto",
-  slidesPerGroup: 2,
-  spaceBetween: 20,
   initialSlide: 2,
+  spaceBetween: 20,
+  breakpoints: {
+    1024: {
+      spaceBetween: 20,
+      slidesPerGroup: 2,
+    },
+    768: {
+      slidesPerGroup: 1,
+    }
+  }
 });
 const feedbackSlider = new Swiper(".feedback-slider", {
   // Optional parameters
