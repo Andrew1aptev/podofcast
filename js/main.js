@@ -1,5 +1,5 @@
+// слайде в hero section на главной странице
 const swiper = new Swiper(".swiper", {
-  // Optional parameters
   direction: "horizontal",
   centeredSlides: true,
   slidesPerView: "auto",
@@ -15,8 +15,8 @@ const swiper = new Swiper(".swiper", {
     }
   }
 });
+// слайдер в секции feedback на главной странице
 const feedbackSlider = new Swiper(".feedback-slider", {
-  // Optional parameters
   direction: "horizontal",
   centeredSlides: true,
   slidesPerView: "auto",
@@ -32,6 +32,8 @@ const feedbackSlider = new Swiper(".feedback-slider", {
 const header = document.querySelector(".header");
 const burgerButton = document.querySelector(".header__mobile-button");
 
+// при нажатии на кнопку бургера к классу .header добавляется класс .open
+// при добавлении класс open открывается бургер меню
 burgerButton.addEventListener("click", ()=> {
   header.classList.toggle("open");
 })
