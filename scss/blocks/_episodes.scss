@@ -91,6 +91,7 @@
 .episodes__card-tags {
     display: flex;
     gap: 6px;
+    flex-wrap: wrap;
 }
 
 .episodes__card-tag {
@@ -127,4 +128,43 @@
     align-items: center;
     align-self: center;
     text-decoration: none;
+}
+
+@media only screen and (max-width: 1200px) {
+
+    .episodes__card-top {
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 1023px) {
+    .episodes__card-bottom {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+
+    .episodes__card-authors {
+        align-self: flex-end;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .episodes__grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .episodes__grid::after {
+        top: -63px;
+        right: -48px;
+        width: 91px;
+        height: 99px;
+    }
+
+    .episodes__card-top {
+        align-items: center;
+    }
+
+    .episodes__card-content {
+        max-width: 100%;
+    }
 }

@@ -1778,7 +1778,7 @@ body {
   -moz-column-gap: 20px;
        column-gap: 20px;
   row-gap: 80px;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
   margin-bottom: 100px;
 }
 
@@ -1813,6 +1813,26 @@ body {
   margin-inline: auto;
 }
 
+@media only screen and (max-width: 1023px) {
+  .benefits__title::after {
+    width: 140px;
+    height: 140px;
+    top: -90px;
+  }
+  .benefits__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media only screen and (max-width: 768px) {
+  .benefits__grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media only screen and (max-width: 600px) {
+  .benefits__title::after {
+    right: -60px;
+  }
+}
 .episode__card-img {
   display: flex;
   flex-direction: column;
@@ -1956,6 +1976,7 @@ body {
 .episodes__card-tags {
   display: flex;
   gap: 6px;
+  flex-wrap: wrap;
 }
 
 .episodes__card-tag {
@@ -1994,6 +2015,37 @@ body {
   text-decoration: none;
 }
 
+@media only screen and (max-width: 1200px) {
+  .episodes__card-top {
+    flex-direction: column;
+  }
+}
+@media only screen and (max-width: 1023px) {
+  .episodes__card-bottom {
+    flex-direction: column;
+    row-gap: 20px;
+  }
+  .episodes__card-authors {
+    align-self: flex-end;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .episodes__grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .episodes__grid::after {
+    top: -63px;
+    right: -48px;
+    width: 91px;
+    height: 99px;
+  }
+  .episodes__card-top {
+    align-items: center;
+  }
+  .episodes__card-content {
+    max-width: 100%;
+  }
+}
 .price__title {
   position: relative;
   max-width: 623px;
