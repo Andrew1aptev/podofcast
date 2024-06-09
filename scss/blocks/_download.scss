@@ -95,3 +95,57 @@
     display: flex;
     gap: 20px;
 }
+
+.download__info-img {
+    background-position: center center;
+    background-size: auto;
+    background-repeat: no-repeat;
+    width: 24px;
+    height: 24px;
+}
+
+.download__info-img--googlePodcasts {
+    background-image: url('./../img/download/gp-icon.svg');
+}
+
+.download__info-img--spotify {
+    background-image: url('./../img/download/spotify-icon.svg');
+}
+
+.download__info-img--youtube {
+    background-image: url('./../img/download/youtube-icon.svg');
+}
+
+@media only screen and (max-width: 1023px) {
+    .download__container::before {
+        width: 391px;
+        height: 756px;
+        bottom: -500px;
+    }
+
+    .download__container::after {
+        width: 510px;
+        height: 600px;
+        right: -335px;
+        bottom: -213px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .download__container::before {
+        width: 269px;
+        height: 410px;
+        bottom: -349px;
+    }
+
+    .download__container::after {
+        width: 196px;
+        height: 224px;
+        right: -133px;
+        bottom: -116px;
+    }
+
+    .download__description {
+        margin-bottom: 100px;
+    }
+}

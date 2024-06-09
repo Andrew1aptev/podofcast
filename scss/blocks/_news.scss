@@ -90,6 +90,7 @@
 
 .news__card-tags {
     display: flex;
+    flex-wrap: wrap;
     gap: 6px;
     color: var(--davysGrey-color);
 }
