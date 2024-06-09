@@ -1322,13 +1322,17 @@ body {
   position: relative;
 }
 
-.hero__container::before {
-  position: absolute;
+.hero__container::before,
+.hero__container::after {
   content: "";
-  background-image: url("./../img/hero/shape-swirl.svg");
+  position: absolute;
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+.hero__container::before {
+  background-image: url("./../img/hero/shape-swirl.svg");
   width: 629px;
   height: 592px;
   left: -430px;
@@ -1337,12 +1341,7 @@ body {
 }
 
 .hero__container::after {
-  position: absolute;
-  content: "";
   background-image: url("./../img/hero/stars.svg");
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
   width: 155px;
   height: 217px;
   right: -65px;
