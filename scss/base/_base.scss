@@ -23,6 +23,13 @@ body {
   padding-bottom: 140px;
 }
 
+@media only screen and (max-width: 1023px) {
+  .section {
+    padding-top: 100px;
+    padding-bottom: 140px;
+  }
+}
+
 .scribble-decor-orange,
 .scribble-decor {
   position: relative;
