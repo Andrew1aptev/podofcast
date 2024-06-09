@@ -1,3 +1,7 @@
+html,
+body{
+  height: 100%;
+}
 body {
   color: var(--body-color);
   font-weight: 500;
@@ -10,8 +14,13 @@ body {
   overflow: hidden;
   width: 100%;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
 }
-
+.main{
+  flex-grow: 1;
+}
 .container {
   max-width: 1190px;
   margin: 0 auto;
