@@ -8,6 +8,7 @@
     display: flex;
     justify-content: space-between;
     padding-bottom: 137px;
+    row-gap: 45px;
 }
 
 .footer__content {
@@ -24,6 +25,27 @@
 .footer__social-list {
     display: flex;
     column-gap: 25px;
+}
+
+.footer__social-link {
+    display: block;
+    background-position: center center;
+    background-size: auto;
+    background-repeat: no-repeat;
+    width: 24px;
+    height: 24px;
+}
+
+.footer__social-link--twitter {
+    background-image: url('./../img/footer/twitter-icon.svg');
+}
+
+.footer__social-link--instagram {
+    background-image: url('./../img/footer/instagram-icon.svg');
+}
+
+.footer__social-link--tiktok {
+    background-image: url('./../img/footer/tiktok-icon.svg');
 }
 
 .footer__nav {
@@ -57,6 +79,29 @@
     margin-bottom: 29px;
 }
 
+.footer__platform-link {
+    display: block;
+    background-position: center center;
+    background-size: auto;
+    background-repeat: no-repeat;
+    height: 22px;
+}
+
+.footer__platform-link--googlepodcasts {
+    background-image: url('./../img/footer/gp-icon.svg');
+    width: 122px;
+}
+
+.footer__platform-link--spotify {
+    background-image: url('./../img/footer/spotify-icon.svg');
+    width: 80px;
+}
+
+.footer__platform-link--youtube {
+    background-image: url('./../img/footer/youtube-icon.svg');
+    width: 94px;
+}
+
 .footer__platform-list,
 .footer__store-list {
     display: flex;
@@ -69,6 +114,24 @@
 
 .footer__store-list {
     gap: 20px;
+}
+
+.footer__store-link {
+    display: block;
+    width: 36px;
+    height: 36px;
+    background-position: center center;
+    background-size: auto;
+    background-repeat: no-repeat;
+
+}
+
+.footer__store-link--appstore {
+    background-image: url('./../img/footer/appstore-icon.svg');
+}
+
+.footer__store-link--googleplay {
+    background-image: url('./../img/footer/googleplay-icon.svg');
 }
 
 .footer__bottom-row {
@@ -97,4 +160,63 @@
     left: -12px;
     position: absolute;
     pointer-events: none;
+}
+
+@media only screen and (max-width: 1023px) {
+
+    .footer__platform-list {
+        flex-direction: column;
+    }
+
+    .footer__nav {
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .footer__top {
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 65px;
+    }
+
+    .footer__content {
+        align-self: center;
+        order: 3;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .footer__platform {
+        align-self: center;
+    }
+
+    .footer__platform-list {
+        align-items: center;
+    }
+
+    .footer__store-list {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .footer__platform-text {
+        text-align: center;
+    }
+
+    .footer__bottom-row {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .footer__content {
+        flex-direction: column;
+    }
+
+    .footer__content-text {
+        text-align: center;
+    }
 }
