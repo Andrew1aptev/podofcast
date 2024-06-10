@@ -84,6 +84,9 @@ body {
 
 .section-subtitle {
   font-size: var(--section-subtitle-fs);
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 80px;
 }
 
 .quote {
@@ -164,7 +167,13 @@ body {
   line-height: 160%;
   color: var(--davysGrey-color);
 }
-
+.bold-text{
+  font-weight: 700;
+}
+.underline-text{
+  color: var(--davysGrey-color);
+  text-decoration: underline;
+}
 .orange-text {
   color: var(--vermillion-color);
 }

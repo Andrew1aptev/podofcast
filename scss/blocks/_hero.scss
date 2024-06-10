@@ -105,6 +105,9 @@
     align-items: center;
     text-decoration: none;
 }
+.hero__link:hover{
+    color: var(--white-color);
+}
 .hero__button {
     display: block;
 }

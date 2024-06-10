@@ -1057,6 +1057,9 @@ body {
 
 .section-subtitle {
   font-size: var(--section-subtitle-fs);
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 80px;
 }
 
 .quote {
@@ -1132,6 +1135,15 @@ body {
   font-size: clamp(0.813rem, 0.759rem + 0.268vw, 1rem);
   line-height: 160%;
   color: var(--davysGrey-color);
+}
+
+.bold-text {
+  font-weight: 700;
+}
+
+.underline-text {
+  color: var(--davysGrey-color);
+  text-decoration: underline;
 }
 
 .orange-text {
@@ -1439,6 +1451,10 @@ body {
   justify-content: center;
   align-items: center;
   text-decoration: none;
+}
+
+.hero__link:hover {
+  color: var(--white-color);
 }
 
 .hero__button {
@@ -2410,6 +2426,128 @@ body {
 
 .news__card-tag:hover {
   color: var(--vermillion-color);
+}
+
+.history__img {
+  background-image: url("./../img/history/microphone-image.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  max-width: 100%;
+  height: 640px;
+  border-radius: 8px;
+  margin-bottom: 60px;
+}
+@media only screen and (max-width: 1024px) {
+  .history__img {
+    height: 435px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .history__img {
+    height: 400px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .history__img {
+    height: 200px;
+  }
+}
+.history__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  padding-bottom: 80px;
+  margin-bottom: 100px;
+  border-bottom: 0.5px solid var(--davysGrey-color);
+}
+@media only screen and (max-width: 768px) {
+  .history__grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+.history__column {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+.history__founders, .history__founder-card {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+@media only screen and (max-width: 1024px) {
+  .history__founders {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .history__founder-card {
+    grid-template-columns: 1fr 2fr;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .history__founder-card {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+.history__founder-card {
+  border: 2px solid var(--black-color);
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 10px 10px 0 0 var(--black-color);
+}
+.history__founder-photo {
+  border-radius: 8px;
+}
+.history__founder-about {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.history__founder-caption {
+  font-size: clamp(0.75rem, 0.7143rem + 0.1786vw, 0.875rem);
+  margin-bottom: 6px;
+}
+.history__founder-name {
+  font-weight: 700;
+  line-height: 100%;
+  font-size: var(--card-title-large-fs);
+  letter-spacing: -2%;
+  margin-bottom: 20px;
+}
+.history__founder-description {
+  font-size: clamp(0.75rem, 0.7143rem + 0.1786vw, 0.875rem);
+  color: var(--davysGrey-color);
+  padding-bottom: 20px;
+  margin-bottom: 10px;
+  border-bottom: 0.5px solid var(--davysGrey-color);
+}
+.history__founder-links {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 10px;
+}
+.history__founder-text {
+  font-weight: 700;
+  font-size: 12px;
+  margin-right: 10px;
+}
+.history__founder-link {
+  height: 20px;
+  width: 20px;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.history__founder-link--tiktok {
+  background-image: url("./../img/history/tiktok-icon.svg");
+}
+.history__founder-link--twitter {
+  background-image: url("./../img/history/twitter-icon.svg");
+}
+.history__founder-link--instagram {
+  background-image: url("./../img/history/instagram-icon.svg");
 }
 
 .download {
