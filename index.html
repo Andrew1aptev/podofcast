@@ -31,9 +31,9 @@
             </ul>
           </nav>
           <div class="header__buttons">
-            <a class="header__link button button--transparent" href="/">RECENT EPISODES
+            <a class="header__link button button--transparent" href="#recent-episodes">RECENT EPISODES
             </a>
-            <button class="header__button button">SUBSCRIBE</button>
+            <button class="header__button button" type="button">SUBSCRIBE</button>
           </div>
         </div>
         <div class="header__mobile-button">
@@ -48,12 +48,14 @@
       <section class="hero section scribble-decor-orange">
         <div class="hero__container container">
           <h1 class="hero__title main-title">
-            Your Daily <span class="orange-text">Podcast</span>
+            Your Daily<br><span class="orange-text">Podcast</span>
           </h1>
           <p class="hero__description section-description">
-            We cover all kinds of categories and a weekly special guest.
+            We cover all kinds of categories and<br>a weekly special guest.
           </p>
-          <button class="hero__button button">SUBSCRIBE</button>
+          <div class="hero__buttons">
+            <button class="hero__button button" type="button">SUBSCRIBE</button>
+          </div>
         </div>
         <div class="podcast-slider swiper">
           <div class="podcast-slider__wrapper swiper-wrapper">
@@ -315,7 +317,7 @@
       </section>
       <section class="episodes section scribble-decor">
         <div class="episodes__container container">
-          <h2 class="episodes__title section-title">
+          <h2 class="episodes__title section-title" id="recent-episodes">
             Recent Episodes
           </h2>
           <p class="episodes__description
