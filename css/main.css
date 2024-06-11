@@ -1472,11 +1472,50 @@ body {
   margin-inline: auto;
   margin-bottom: 120px;
 }
-
 .hero-slider__card {
   width: 373px;
   border-radius: 12px;
   background-color: blueviolet;
+}
+.hero-slider__platform {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+.hero-slider__text {
+  font-weight: 700;
+  font-size: var(--card-title-large-fs);
+  line-height: 120%;
+  letter-spacing: -0.08em;
+  color: var(--pewterBlue-color);
+}
+.hero-slider__img {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  padding: 20px;
+  text-decoration: none;
+}
+.hero-slider__episode-1 {
+  background-image: url("/img/hero/hero__episode-1.webp");
+}
+.hero-slider__episode-2 {
+  background-image: url("/img/hero/hero__episode-2.webp");
+}
+.hero-slider__episode-3 {
+  background-image: url("/img/hero/hero__episode-3.webp");
+}
+.hero-slider__episode-4 {
+  background-image: url("/img/hero/hero__episode-4.webp");
+}
+.hero-slider__episode-5 {
+  background-image: url("/img/hero/hero__episode-5.webp");
 }
 
 @media only screen and (max-width: 1024px) {
