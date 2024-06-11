@@ -1466,6 +1466,35 @@ body {
     margin-bottom: 80px;
   }
 }
+.hero-slider {
+  max-width: 1440px;
+  height: 373px;
+  margin-inline: auto;
+  margin-bottom: 120px;
+}
+
+.hero-slider__card {
+  width: 373px;
+  border-radius: 12px;
+  background-color: blueviolet;
+}
+
+@media only screen and (max-width: 1024px) {
+  .hero-slider {
+    height: 300px;
+  }
+  .hero-slider__card {
+    width: 300px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .hero-slider {
+    height: 250px;
+  }
+  .hero-slider__card {
+    width: 250px;
+  }
+}
 .hero__support {
   display: flex;
   align-items: center;
@@ -1584,33 +1613,6 @@ body {
   text-align: center;
 }
 
-.podcast-slider {
-  max-width: 1440px;
-  height: 373px;
-  margin-bottom: 120px;
-}
-
-.podcast-slider__card {
-  width: 373px;
-  border-radius: 12px;
-}
-
-@media only screen and (max-width: 1024px) {
-  .podcast-slider {
-    height: 300px;
-  }
-  .podcast-slider__card {
-    width: 300px;
-  }
-}
-@media only screen and (max-width: 768px) {
-  .podcast-slider {
-    height: 250px;
-  }
-  .podcast-slider__card {
-    width: 250px;
-  }
-}
 .about {
   background-color: var(--white-color);
 }
@@ -1811,14 +1813,14 @@ body {
   margin-right: 10px;
 }
 
-.feedback-slider__buttons {
+.feedback__buttons {
   margin-top: 120px;
   display: flex;
   column-gap: 20px;
 }
 
-.feedback-slider__button-prev,
-.feedback-slider__button-next {
+.feedback__button-prev,
+.feedback__button-next {
   position: static;
   width: 37px;
   height: 37px;
@@ -1828,11 +1830,11 @@ body {
   cursor: pointer;
 }
 
-.feedback-slider__button-prev {
+.feedback__button-prev {
   background-image: url("./../img/feedback/arrow-left.svg");
 }
 
-.feedback-slider__button-next {
+.feedback__button-next {
   background-image: url("./../img/feedback/arrow-right.svg");
 }
 
@@ -1962,55 +1964,6 @@ body {
     right: -60px;
   }
 }
-.episode__card-img {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 100%;
-  height: 100%;
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  border-radius: 12px;
-  text-decoration: none;
-  padding: 20px;
-}
-
-.episode__card-img--1 {
-  background-image: url("./../img/hero/slide-bg-1.webp");
-}
-
-.episode__card-img--2 {
-  background-image: url("./../img/hero/slide-bg-2.webp");
-}
-
-.episode__card-img--3 {
-  background-image: url("./../img/hero/silde-bg-3.webp");
-}
-
-.episode__card-img--4 {
-  background-image: url("./../img/hero/slide-bg-4.webp");
-}
-
-.episode__card-img--5 {
-  background-image: url("./../img/hero/slide-bg-5.webp");
-}
-
-.episode__platform {
-  display: flex;
-  column-gap: 10px;
-  align-self: flex-end;
-  color: white;
-}
-
-.episode__text {
-  font-weight: 700;
-  font-size: var(--card-title-large-fs);
-  line-height: 140%;
-  letter-spacing: -0.08em;
-  color: var(--pewterBlue-color);
-}
-
 .episodes {
   background-color: var(--champagne-color);
 }
@@ -2061,9 +2014,56 @@ body {
 }
 
 .episodes__card-img {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 12px;
+  text-decoration: none;
+  padding: 10px;
   width: 166px;
   height: 166px;
-  padding: 10px;
+}
+
+.episodes__card-img--6 {
+  background-image: url("./../img/episodes/episode-6.webp");
+}
+
+.episodes__card-img--5 {
+  background-image: url("./../img/episodes/episode-5.webp");
+}
+
+.episodes__card-img--4 {
+  background-image: url("./../img/episodes/episode-4.webp");
+}
+
+.episodes__card-img--3 {
+  background-image: url("./../img/episodes/episode-3.webp");
+}
+
+.episodes__card-img--2 {
+  background-image: url("./../img/episodes/episode-2.webp");
+}
+
+.episodes__card-img--1 {
+  background-image: url("./../img/episodes/episode-1.webp");
+}
+
+.episodes__platform {
+  display: flex;
+  column-gap: 10px;
+  align-self: flex-end;
+  color: white;
+}
+
+.episodes__text {
+  font-weight: 700;
+  font-size: var(--card-title-large-fs);
+  line-height: 140%;
+  letter-spacing: -0.08em;
+  color: var(--pewterBlue-color);
 }
 
 .episodes__card-content {
@@ -2289,12 +2289,8 @@ body {
 
 .price__card-number {
   display: flex;
+  align-items: center;
   flex-direction: column;
-}
-
-.price__card-number--bold {
-  color: var(--vermillion-color);
-  font-weight: 700;
   font-size: var(--card-title-small-fs);
 }
 

@@ -118,6 +118,40 @@
     }
 }
 
+.hero-slider {
+    max-width: 1440px;
+    height: 373px;
+    margin-inline: auto;
+    margin-bottom: 120px;
+}
+
+
+.hero-slider__card {
+    width: 373px;
+    border-radius: 12px;
+    background-color: blueviolet;
+}
+
+@media only screen and (max-width: 1024px) {
+    .hero-slider {
+        height: 300px;
+    }
+
+    .hero-slider__card {
+        width: 300px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .hero-slider {
+        height: 250px;
+    }
+
+    .hero-slider__card {
+        width: 250px;
+    }
+}
+
 .hero__support {
     display: flex;
     align-items: center;

@@ -116,12 +116,8 @@
 
 .price__card-number {
     display: flex;
+    align-items: center;
     flex-direction: column;
-}
-
-.price__card-number--bold {
-    color: var(--vermillion-color);
-    font-weight: 700;
     font-size: var(--card-title-small-fs);
 }
 

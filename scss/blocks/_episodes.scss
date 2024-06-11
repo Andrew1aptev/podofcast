@@ -48,11 +48,56 @@
 }
 
 .episodes__card-img {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 12px;
+    text-decoration: none;
+    padding: 10px;
     width: 166px;
     height: 166px;
-    padding: 10px;
+}
+.episodes__card-img--6 {
+    background-image: url('./../img/episodes/episode-6.webp');
 }
 
+.episodes__card-img--5 {
+    background-image: url('./../img/episodes/episode-5.webp');
+}
+
+.episodes__card-img--4 {
+    background-image: url('./../img/episodes/episode-4.webp');
+}
+
+.episodes__card-img--3 {
+    background-image: url('./../img/episodes/episode-3.webp');
+}
+
+.episodes__card-img--2 {
+    background-image: url('./../img/episodes/episode-2.webp');
+}
+
+.episodes__card-img--1 {
+    background-image: url('./../img/episodes/episode-1.webp');
+}
+
+.episodes__platform {
+    display: flex;
+    column-gap: 10px;
+    align-self: flex-end;
+    color: white;
+}
+
+.episodes__text {
+    font-weight: 700;
+    font-size: var(--card-title-large-fs);
+    line-height: 140%;
+    letter-spacing: -0.08em;
+    color: var(--pewterBlue-color);
+}
 .episodes__card-content {
     max-width: 352px;
 }

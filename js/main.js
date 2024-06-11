@@ -1,5 +1,5 @@
 // слайде в hero section на главной странице
-const swiper = new Swiper(".swiper", {
+const heroSlider = new Swiper(".hero-slider", {
   direction: "horizontal",
   centeredSlides: true,
   slidesPerView: "auto",
@@ -24,8 +24,8 @@ const feedbackSlider = new Swiper(".feedback-slider", {
   spaceBetween: 20,
   initialSlide: 1,
   navigation: {
-    nextEl: ".feedback-slider__button-prev",
-    prevEl: ".feedback-slider__button-next",
+    nextEl: ".feedback__button-prev",
+    prevEl: ".feedback__button-next",
   },
 });
 

@@ -63,14 +63,14 @@
 
 .feedback-slider__platform-icon {}
 
-.feedback-slider__buttons {
+.feedback__buttons {
     margin-top: 120px;
     display: flex;
     column-gap: 20px;
 }
 
-.feedback-slider__button-prev,
-.feedback-slider__button-next {
+.feedback__button-prev,
+.feedback__button-next {
     position: static;
     width: 37px;
     height: 37px;
@@ -80,11 +80,11 @@
     cursor: pointer;
 }
 
-.feedback-slider__button-prev {
+.feedback__button-prev {
     background-image: url('./../img/feedback/arrow-left.svg');
 }
 
-.feedback-slider__button-next {
+.feedback__button-next {
     background-image: url('./../img/feedback/arrow-right.svg');
 }
 
