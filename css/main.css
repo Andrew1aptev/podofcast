@@ -1503,19 +1503,19 @@ body {
   text-decoration: none;
 }
 .hero-slider__episode-1 {
-  background-image: url("./img/hero/hero__episode-1.webp");
+  background-image: url("../img/hero/hero__episode-1.webp");
 }
 .hero-slider__episode-2 {
-  background-image: url("./img/hero/hero__episode-2.webp");
+  background-image: url("../img/hero/hero__episode-2.webp");
 }
 .hero-slider__episode-3 {
-  background-image: url("./img/hero/hero__episode-3.webp");
+  background-image: url("../img/hero/hero__episode-3.webp");
 }
 .hero-slider__episode-4 {
-  background-image: url("./img/hero/hero__episode-4.webp");
+  background-image: url("../img/hero/hero__episode-4.webp");
 }
 .hero-slider__episode-5 {
-  background-image: url("./img/hero/hero__episode-5.webp");
+  background-image: url("../img/hero/hero__episode-5.webp");
 }
 
 @media only screen and (max-width: 1024px) {
