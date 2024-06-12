@@ -977,20 +977,20 @@ body {
 }
 
 body {
-  color: var(--body-color);
-  font-weight: 500;
-  font-size: var(--body-fs);
   font-family: var(--font-family), sans-serif;
+  font-size: var(--body-fs);
+  font-weight: 500;
+  color: var(--body-color);
   background-color: var(--white-color);
 }
 
 .page__wrapper {
-  overflow: hidden;
-  width: 100%;
   position: relative;
   display: flex;
   flex-direction: column;
+  width: 100%;
   min-height: 100%;
+  overflow: hidden;
 }
 
 .main {
@@ -999,8 +999,8 @@ body {
 
 .container {
   max-width: 1190px;
-  margin: 0 auto;
   padding-inline: 15px;
+  margin: 0 auto;
 }
 
 .section {
@@ -1021,17 +1021,17 @@ body {
 
 .scribble-decor::after,
 .scribble-decor-orange::after {
-  content: "";
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  bottom: -75px;
+  position: absolute;
   right: 50%;
-  transform: translateX(50%);
+  bottom: -75px;
+  z-index: 1;
   width: 150px;
   height: 150px;
-  z-index: 1;
-  position: absolute;
+  content: "";
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  transform: translateX(50%);
 }
 
 .scribble-decor::after {
@@ -1049,17 +1049,17 @@ body {
 }
 
 .section-title {
+  margin-bottom: 20px;
   font-size: var(--section-title-fs);
   line-height: 120%;
   letter-spacing: -0.02em;
-  margin-bottom: 20px;
 }
 
 .section-subtitle {
+  margin-bottom: 80px;
   font-size: var(--section-subtitle-fs);
   font-weight: 700;
   text-align: center;
-  margin-bottom: 80px;
 }
 
 .quote {
@@ -1071,10 +1071,10 @@ body {
 }
 
 .section-description {
-  color: var(--davysGrey-color);
+  margin-bottom: 100px;
   font-size: var(----section-description-fs);
   line-height: 160%;
-  margin-bottom: 100px;
+  color: var(--davysGrey-color);
 }
 
 .main-title,
@@ -1093,15 +1093,15 @@ body {
 .button {
   height: 62px;
   padding-inline: 36px;
+  font-size: var(--button-fs);
+  font-weight: 700;
+  line-height: 160%;
+  color: var(--white-color);
+  text-transform: uppercase;
+  background: var(--button-bg-color);
   border: 2px solid var(--black-color);
   border-radius: 8px;
-  background: var(--button-bg-color);
-  color: var(--white-color);
   box-shadow: 6px 6px 0 0 rgba(0, 0, 0, 0.25);
-  font-weight: 700;
-  font-size: var(--button-fs);
-  line-height: 160%;
-  text-transform: uppercase;
   transition: all 0.2s ease;
 }
 
@@ -1125,14 +1125,14 @@ body {
   }
 }
 .button--transparent {
-  background-color: var(--button-bg-transparent);
   color: var(--black-color);
+  background-color: var(--button-bg-transparent);
 }
 
 .card-caption,
 .small-text {
-  font-weight: 500;
   font-size: clamp(0.813rem, 0.759rem + 0.268vw, 1rem);
+  font-weight: 500;
   line-height: 160%;
   color: var(--davysGrey-color);
 }
@@ -1657,8 +1657,8 @@ body {
 }
 
 .about__title {
-  margin: 0 auto;
   max-width: 735px;
+  margin-inline: auto;
   margin-bottom: 100px;
 }
 
@@ -1682,10 +1682,10 @@ body {
 .about__content-img {
   width: 275px;
   height: 275px;
+  margin-bottom: 40px;
+  background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  background-repeat: no-repeat;
-  margin-bottom: 40px;
 }
 
 .about__content-img--1 {
@@ -1926,40 +1926,40 @@ body {
 }
 
 .benefits__title {
+  position: relative;
   max-width: 662px;
   margin-inline: auto;
-  position: relative;
 }
 
 .benefits__title::after {
-  content: "";
-  background-image: url("./../img/benefits/Scribble-benefits.svg");
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
+  position: absolute;
+  top: -137px;
+  right: -101px;
   width: 240px;
   height: 240px;
-  position: absolute;
-  right: -101px;
-  top: -137px;
+  content: "";
+  background-image: url("./../img/benefits/Scribble-benefits.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
 }
 
 .benefits__grid {
-  display: grid;
-  column-gap: 20px;
-  row-gap: 80px;
   grid-template-columns: repeat(3, 1fr);
+  row-gap: 80px;
+  column-gap: 20px;
+  height: 78px;
   margin-bottom: 100px;
 }
 
 .benefits__card-img {
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
   width: 78px;
   height: 78px;
   margin-inline: auto;
   margin-bottom: 30px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
 }
 
 .benefits__card-img--1 {
@@ -1977,17 +1977,17 @@ body {
 
 .benefits__link {
   display: inline-flex;
-  justify-content: center;
   align-items: center;
-  text-decoration: none;
+  justify-content: center;
   margin-inline: auto;
+  text-decoration: none;
 }
 
 @media only screen and (max-width: 1023px) {
   .benefits__title::after {
+    top: -90px;
     width: 140px;
     height: 140px;
-    top: -90px;
   }
   .benefits__grid {
     grid-template-columns: repeat(2, 1fr);
