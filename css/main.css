@@ -1567,15 +1567,15 @@ body {
 }
 
 .hero__support-link--spotify {
-  background-image: url("./../icons/spotify-icon.svg");
+  background-image: url("./../icons/sponsors/medium/spotify-icon.svg");
 }
 
 .hero__support-link--googlePodcasts {
-  background-image: url("./../icons/googlePodcasts-icon.svg");
+  background-image: url("./../icons/sponsors/medium/googlePodcasts-icon.svg");
 }
 
 .hero__support-link--youtube {
-  background-image: url("./../icons/Youtube.svg");
+  background-image: url("./../icons/sponsors/medium/youtube-icon.svg");
 }
 
 @media only screen and (max-width: 1023px) {
@@ -1968,7 +1968,27 @@ body {
 }
 
 .benefits__card-img--1 {
-  background-image: url("./../img/benefits/Scribble-card.svg");
+  background-image: url("./../img/benefits/card-1.svg");
+}
+
+.benefits__card-img--2 {
+  background-image: url("./../img/benefits/card-2.svg");
+}
+
+.benefits__card-img--3 {
+  background-image: url("./../img/benefits/card-3.svg");
+}
+
+.benefits__card-img--4 {
+  background-image: url("./../img/benefits/card-4.svg");
+}
+
+.benefits__card-img--5 {
+  background-image: url("./../img/benefits/card-5.svg");
+}
+
+.benefits__card-img--6 {
+  background-image: url("./../img/benefits/card-6.svg");
 }
 
 .benefits__card-title {
@@ -3012,15 +3032,15 @@ body {
 }
 .footer {
   padding-bottom: 80px;
-  border-top: 1.5px solid var(--davysGrey-color);
   overflow: hidden;
+  border-top: 1.5px solid var(--davysGrey-color);
 }
 
 .footer__top {
   display: flex;
+  row-gap: 45px;
   justify-content: space-between;
   padding-bottom: 137px;
-  row-gap: 45px;
 }
 
 .footer__content {
@@ -3030,8 +3050,8 @@ body {
 }
 
 .footer__content-text {
-  color: var(--davysGrey-color);
   max-width: 275px;
+  color: var(--davysGrey-color);
 }
 
 .footer__social-list {
@@ -3041,11 +3061,11 @@ body {
 
 .footer__social-link {
   display: block;
-  background-position: center center;
-  background-size: auto;
-  background-repeat: no-repeat;
   width: 24px;
   height: 24px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: auto;
 }
 
 .footer__social-link--twitter {
@@ -3086,31 +3106,31 @@ body {
 }
 
 .footer__platform-text {
-  color: var(--davysGrey-color);
   margin-bottom: 29px;
+  color: var(--davysGrey-color);
 }
 
 .footer__platform-link {
   display: block;
+  height: 22px;
+  background-repeat: no-repeat;
   background-position: center center;
   background-size: auto;
-  background-repeat: no-repeat;
-  height: 22px;
 }
 
 .footer__platform-link--googlepodcasts {
-  background-image: url("./../img/footer/gp-icon.svg");
   width: 122px;
+  background-image: url("./../icons/sponsors/small/gp-icon.svg");
 }
 
 .footer__platform-link--spotify {
-  background-image: url("./../img/footer/spotify-icon.svg");
   width: 80px;
+  background-image: url("./../icons/sponsors/small/spotify-icon.svg");
 }
 
 .footer__platform-link--youtube {
-  background-image: url("./../img/footer/youtube-icon.webp");
   width: 94px;
+  background-image: url("./../icons/sponsors/small/youtube-icon.svg");
 }
 
 .footer__platform-list,
@@ -3131,9 +3151,9 @@ body {
   display: block;
   width: 36px;
   height: 36px;
+  background-repeat: no-repeat;
   background-position: center center;
   background-size: auto;
-  background-repeat: no-repeat;
 }
 
 .footer__store-link--appstore {
@@ -3145,11 +3165,11 @@ body {
 }
 
 .footer__bottom-row {
-  border-top: 0.5px solid var(--davysGrey-color);
-  padding-top: 20px;
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
+  padding-top: 20px;
+  border-top: 0.5px solid var(--davysGrey-color);
 }
 
 .footer__bottom-links {
@@ -3158,18 +3178,18 @@ body {
 }
 
 .footer__bottom-link {
+  position: relative;
   font-size: 12px;
   line-height: 160%;
   color: var(--davysGrey-color);
   text-decoration: none;
-  position: relative;
 }
 
 .footer__bottom-link:nth-child(2)::before {
-  content: "•";
-  left: -12px;
   position: absolute;
+  left: -12px;
   pointer-events: none;
+  content: "•";
 }
 
 @media only screen and (max-width: 1023px) {
@@ -3187,10 +3207,10 @@ body {
     padding-bottom: 65px;
   }
   .footer__content {
-    align-self: center;
-    order: 3;
     flex-direction: row;
     align-items: center;
+    align-self: center;
+    order: 3;
   }
   .footer__platform {
     align-self: center;
