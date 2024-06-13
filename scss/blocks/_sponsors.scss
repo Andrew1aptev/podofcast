@@ -1,26 +1,30 @@
 .sponsors {
   background-color: var(--champagne-color);
 }
-.sponsors__wrapper{
+
+.sponsors__wrapper {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
 }
-.sponsors__title{
+
+.sponsors__title {
   position: relative;
 }
-.sponsors__title::before{
-  content: "";
-  background-image: url("./../img/sponsors/sparkle-decor.svg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-  width: 74px;
-  height: 74px;
+
+.sponsors__title::before {
   position: absolute;
   top: -40px;
   left: -67px;
+  width: 74px;
+  height: 74px;
+  content: "";
+  background-image: url("./../img/sponsors/sparkle-decor.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
 }
+
 .sponsors-slider {
   height: 245px;
   margin-left: 590px;
@@ -51,10 +55,10 @@
 }
 
 .sponsors-slider__text {
+  max-width: 440px;
   padding-top: 30px;
   font-size: clamp(0.75rem, 0.714rem + 0.179vw, 0.875rem);
   text-align: center;
-  max-width: 440px;
 }
 
 .sponsors__buttons {
@@ -103,22 +107,22 @@
     padding-top: 20px;
     padding-bottom: 20px;
   }
-  .sponsors-slider__text{
-   padding-top: 20px;
+  .sponsors-slider__text {
+    padding-top: 20px;
   }
 }
 
 @media only screen and (max-width: 600px) {
-  .sponsors__title::before{
-    width: 43px;
-    height: 43px;
+  .sponsors__title::before {
     top: -30px;
     left: -40px;
+    width: 43px;
+    height: 43px;
   }
   .sponsors-slider__slide {
     width: 310px;
   }
-  .sponsors-slider__text{
+  .sponsors-slider__text {
     max-width: 240px;
   }
 }

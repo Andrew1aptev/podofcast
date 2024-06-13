@@ -64,7 +64,7 @@
   }
   @media only screen and (max-width: 600px){
     &__founder-card {
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: 1fr;
     }
   }
   &__founder-card {
@@ -76,8 +76,13 @@
 
   &__founder-photo {
     border-radius: 8px;
+    justify-self: center;
   }
-
+  @media only screen and (max-width: 768px) {
+    &__founder-photo {
+      height: 400px;
+    }
+  }
   &__founder-about {
     display: flex;
     flex-direction: column;
@@ -105,16 +110,18 @@
     border-bottom: 0.5px solid var(--davysGrey-color);
   }
 
+  &__founder-text {
+    font-weight: 700;
+    font-size: 12px;
+    margin-right: 10px;
+  }
+
+  //social links
   &__founder-links {
     display: flex;
     justify-content: flex-end;
     align-items: center;
     gap: 10px;
-  }
-  &__founder-text {
-    font-weight: 700;
-    font-size: 12px;
-    margin-right: 10px;
   }
 
   &__founder-link {
@@ -133,6 +140,12 @@
 
     &--instagram {
       background-image: url("./../img/history/instagram-icon.svg");
+    }
+  }
+
+  @media only screen and (max-width: 600px){
+    &__founder-links{
+      gap: 38px;
     }
   }
 }

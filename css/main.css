@@ -1359,7 +1359,7 @@ body {
 }
 @media only screen and (max-width: 768px) {
   .hero--about {
-    padding-bottom: 160px;
+    padding-bottom: 45px;
   }
 }
 .hero__container {
@@ -1592,7 +1592,7 @@ body {
   display: flex;
   gap: 20px;
   position: absolute;
-  bottom: -350px;
+  bottom: -330px;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -1633,9 +1633,14 @@ body {
   }
 }
 @media only screen and (max-width: 768px) {
+  .hero__subscribers-row::after {
+    width: 45px;
+    height: 45px;
+    right: -30px;
+    top: -50px;
+  }
   .hero__subscribers-row {
-    flex-direction: column;
-    bottom: -235px;
+    bottom: -90px;
     gap: 10px;
   }
   .hero__subscribers-card {
@@ -2362,11 +2367,6 @@ body {
   position: relative;
 }
 
-@media only screen and (max-width: 1024px) {
-  .news__grid {
-    grid-template-columns: repeat(1, 1fr);
-  }
-}
 .news__grid::before,
 .news__grid::after {
   content: "";
@@ -2463,6 +2463,32 @@ body {
   color: var(--vermillion-color);
 }
 
+@media only screen and (max-width: 1024px) {
+  .news__grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .news__card,
+  .news__card-row {
+    align-items: center;
+  }
+  .news__card-row {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .news__card-title {
+    text-align: center;
+  }
+  .news__card-img {
+    width: 400px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .news__card-img {
+    width: 300px;
+    height: 220px;
+  }
+}
 .history__img {
   background-image: url("./../img/history/microphone-image.jpg");
   background-repeat: no-repeat;
@@ -2522,7 +2548,7 @@ body {
 }
 @media only screen and (max-width: 600px) {
   .history__founder-card {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
   }
 }
 .history__founder-card {
@@ -2533,6 +2559,12 @@ body {
 }
 .history__founder-photo {
   border-radius: 8px;
+  justify-self: center;
+}
+@media only screen and (max-width: 768px) {
+  .history__founder-photo {
+    height: 400px;
+  }
 }
 .history__founder-about {
   display: flex;
@@ -2557,16 +2589,16 @@ body {
   margin-bottom: 10px;
   border-bottom: 0.5px solid var(--davysGrey-color);
 }
+.history__founder-text {
+  font-weight: 700;
+  font-size: 12px;
+  margin-right: 10px;
+}
 .history__founder-links {
   display: flex;
   justify-content: flex-end;
   align-items: center;
   gap: 10px;
-}
-.history__founder-text {
-  font-weight: 700;
-  font-size: 12px;
-  margin-right: 10px;
 }
 .history__founder-link {
   height: 20px;
@@ -2584,6 +2616,11 @@ body {
 .history__founder-link--instagram {
   background-image: url("./../img/history/instagram-icon.svg");
 }
+@media only screen and (max-width: 600px) {
+  .history__founder-links {
+    gap: 38px;
+  }
+}
 
 .sponsors {
   background-color: var(--champagne-color);
@@ -2591,8 +2628,8 @@ body {
 
 .sponsors__wrapper {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
 }
 
 .sponsors__title {
@@ -2600,16 +2637,16 @@ body {
 }
 
 .sponsors__title::before {
-  content: "";
-  background-image: url("./../img/sponsors/sparkle-decor.svg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-  width: 74px;
-  height: 74px;
   position: absolute;
   top: -40px;
   left: -67px;
+  width: 74px;
+  height: 74px;
+  content: "";
+  background-image: url("./../img/sponsors/sparkle-decor.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
 }
 
 .sponsors-slider {
@@ -2642,10 +2679,10 @@ body {
 }
 
 .sponsors-slider__text {
+  max-width: 440px;
   padding-top: 30px;
   font-size: clamp(0.75rem, 0.714rem + 0.179vw, 0.875rem);
   text-align: center;
-  max-width: 440px;
 }
 
 .sponsors__buttons {
@@ -2696,10 +2733,10 @@ body {
 }
 @media only screen and (max-width: 600px) {
   .sponsors__title::before {
-    width: 43px;
-    height: 43px;
     top: -30px;
     left: -40px;
+    width: 43px;
+    height: 43px;
   }
   .sponsors-slider__slide {
     width: 310px;

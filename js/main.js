@@ -51,3 +51,9 @@ const burgerButton = document.querySelector(".header__mobile-button");
 burgerButton.addEventListener("click", ()=> {
   header.classList.toggle("open");
 })
+
+// при нажатии на форму, курсор должен переместится в самое начало текстового поля
+let textarea = document.querySelector('.message__form-textarea');
+textarea.addEventListener('focus', function() {
+  this.setSelectionRange(0, 0);
+});
