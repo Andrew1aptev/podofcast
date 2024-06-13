@@ -29,6 +29,20 @@ const feedbackSlider = new Swiper(".feedback-slider", {
   },
 });
 
+// слайдер в секции sponsor на странице about
+const sponsorsSlider = new Swiper(".sponsors-slider", {
+  direction: "horizontal",
+  centeredSlides: true,
+  slidesPerView: "auto",
+  slidesPerGroup: 1,
+  spaceBetween: 20,
+  initialSlide: 1,
+  navigation: {
+    nextEl: ".sponsors__button-prev",
+    prevEl: ".sponsors__button-next",
+  },
+});
+
 const header = document.querySelector(".header");
 const burgerButton = document.querySelector(".header__mobile-button");
 

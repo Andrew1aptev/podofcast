@@ -1,0 +1,124 @@
+.sponsors {
+  background-color: var(--champagne-color);
+}
+.sponsors__wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sponsors__title{
+  position: relative;
+}
+.sponsors__title::before{
+  content: "";
+  background-image: url("./../img/sponsors/sparkle-decor.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  width: 74px;
+  height: 74px;
+  position: absolute;
+  top: -40px;
+  left: -67px;
+}
+.sponsors-slider {
+  height: 245px;
+  margin-left: 590px;
+}
+
+.sponsors-slider__slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 570px;
+  padding-inline: 17px;
+  padding-top: 40px;
+  padding-bottom: 30px;
+  background-color: var(--white-color);
+  border-radius: 8px;
+}
+
+.sponsors-slider__image {
+  margin-bottom: 20px;
+}
+
+.sponsors-slider__line {
+  width: 100%;
+  max-width: 355px;
+  height: 1px;
+  background-image: url("./../img/sponsors/line.svg");
+  background-repeat: no-repeat;
+}
+
+.sponsors-slider__text {
+  padding-top: 30px;
+  font-size: clamp(0.75rem, 0.714rem + 0.179vw, 0.875rem);
+  text-align: center;
+  max-width: 440px;
+}
+
+.sponsors__buttons {
+  display: flex;
+  column-gap: 20px;
+  margin-top: 60px;
+}
+
+.sponsors__button-prev,
+.sponsors__button-next {
+  position: static;
+  width: 37px;
+  height: 37px;
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.sponsors__button-prev {
+  background-image: url("./../icons/arrow-left.svg");
+}
+
+.sponsors__button-next {
+  background-image: url("./../icons/arrow-right.svg");
+}
+
+@media only screen and (max-width: 1023px) {
+
+  .sponsors-slider {
+    margin-left: 0px;
+  }
+
+  .sponsors-slider__slide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+
+  .sponsors-slider__slide {
+    width: 470px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .sponsors-slider__text{
+   padding-top: 20px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .sponsors__title::before{
+    width: 43px;
+    height: 43px;
+    top: -30px;
+    left: -40px;
+  }
+  .sponsors-slider__slide {
+    width: 310px;
+  }
+  .sponsors-slider__text{
+    max-width: 240px;
+  }
+}

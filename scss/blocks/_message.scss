@@ -1,0 +1,125 @@
+.message {
+  &__wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__title{
+    display: inline-block;
+    position: relative;
+  }
+  &__title::after{
+    content: "";
+    background-image: url("./../img/message/title-decor.svg");
+    width: 68px;
+    height: 24px;
+    position: absolute;
+    right: -40px;
+    top: -20px;
+  }
+  &__form {
+    display: flex;
+    flex-direction: column;
+    column-gap: 20px;
+    row-gap: 40px;
+    max-width: 766px;
+    margin-inline: auto;
+    padding-top: 40px;
+    border-top: 0.5px solid var(--davysGrey-color);
+    position: relative;
+  }
+  &__form::before,
+  &__form::after {
+    content: "";
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
+  &__form::before{
+    width: 120px;
+    height: 120px;
+    bottom: 60px;
+    left: -300px;
+    background-image: url("./../img/message/swirl-decor.svg");
+  }
+  &__form::after{
+    width: 78px;
+    height: 78px;
+    background-image: url("./../img/message/stars-decor.svg");
+    top: 0px;
+    right: -120px;
+  }
+  @media only screen and (max-width: 1024px){
+    &__form::after{
+      width: 50px;
+      height: 45px;
+      top: 14px;
+      right: 0px;
+    }
+  }
+  &__form-row{
+    display: flex;
+    width: 100%;
+    column-gap: 20px;
+    row-gap: 40px;
+  }
+  &__form-column {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    flex-grow: 1;
+  }
+  &__form-column--row{
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__label {
+    font-weight: 700;
+    font-size: var(--button-fs);
+  }
+
+  &__input{
+    font-weight: 700;
+  }
+
+  &__form-textarea {
+    min-height: 165px;
+    resize: none;
+  }
+
+  &__input,
+  &__form-textarea {
+    padding: 20px;
+    border: 1.5px solid var(--black-color);
+    border-radius: 8px;
+  }
+  &__form-button{
+    margin-left: 80px;
+  }
+  &__form-text{
+    font-size: 14px;
+  }
+  @media only screen and (max-width: 768px){
+    &__form-row{
+      flex-direction: column;
+    }
+  }
+  @media only screen and (max-width: 768px){
+    &__form-column--row{
+      justify-content: center;
+      flex-direction: column;
+    }
+    &__form-column{
+      row-gap: 10px;
+    }
+    &__input,
+    &__form-textarea{
+      padding: 10px;
+    }
+    &__form-button{
+      margin-left: 0px;
+    }
+  }
+}

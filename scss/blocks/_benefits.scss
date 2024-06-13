@@ -28,10 +28,10 @@
 }
 
 .benefits__grid {
+    display: grid;
     grid-template-columns: repeat(3, 1fr);
     row-gap: 80px;
     column-gap: 20px;
-    height: 78px;
     margin-bottom: 100px;
 }
 
