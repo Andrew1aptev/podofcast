@@ -1,5 +1,5 @@
 // получаем все кнопки навигации
-const tabsButtons = document.querySelectorAll('.latest-episode__button');
+const tabsButtons = document.querySelectorAll('.episodes__button');
 
 // Проходимся по всем кнопкам
 tabsButtons.forEach(btn => {
@@ -8,7 +8,7 @@ tabsButtons.forEach(btn => {
         // Получаем предыдущую активную кнопку
         const prevActiveItem = document.querySelector('.episodes__grid._active');
         // Получаем предыдущую активную вкладку
-        const prevActiveButton = document.querySelector('.latest-episode__button._active');
+        const prevActiveButton = document.querySelector('.episodes__button._active');
 
         // Проверяем есть или нет предыдущая активная кнопка
         if (prevActiveButton) {
