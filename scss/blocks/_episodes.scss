@@ -14,20 +14,6 @@
     gap: 20px;
     margin-bottom: 100px;
 }
-
-.episodes__grid::after {
-    content: "";
-    position: absolute;
-    top: -158px;
-    right: -158px;
-    width: 240px;
-    height: 240px;
-    background-image: url('./../img/episodes/sparkle-decor.svg');
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
 .episodes__card {
     padding: 16px;
     border: 2px solid var(--black-color);
