@@ -1,10 +1,232 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="About our podcast platform, its creators and its history.">
+	<link href="../css/main.css" rel="stylesheet">
+	<title>PODOFCAST - Your Daily Podcast</title>
 </head>
-<body>
-$END$
+
+<body class="page">
+<div class="page__wrapper">
+	<header class="header">
+		<div class="header__container container">
+			<div class="logo">
+				<a class="logo__link" href="../index.html"></a>
+			</div>
+			<div class="header__row header__mobile-menu open">
+				<nav class="header__nav">
+					<ul class="header__nav-list">
+						<li class="header__nav-item">
+							<a class="header__nav-link" href="/">Episodes</a>
+						</li>
+						<li class="header__nav-item">
+							<a class="header__nav-link" href="./about.html">About</a>
+						</li>
+						<li class="header__nav-item header__nav-item--arrow-down">
+							<a class="header__nav-link" href="/">More</a>
+						</li>
+					</ul>
+				</nav>
+				<div class="header__buttons">
+					<a class="header__link button button--transparent" href="/">RECENT Episodes </a>
+					<button class="header__button button" type="button">SUBSCRIBE</button>
+				</div>
+			</div>
+			<div class="header__mobile-button">
+				<span class="header__mobile-line"></span> <span class="header__mobile-line"></span>
+				<span class="header__mobile-line"></span>
+			</div>
+		</div>
+	</header>
+
+	<main class="main">
+
+		<section class="hero hero--news">
+			<div class="hero__container container">
+				<div class="hero__wrapper">
+					<h1 class="hero__title main-title">Article<br> and <span class="orange-text">News</span></h1>
+					<p class="hero__description section-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+						eiusmod tempor incididunt<br> ut labore et dolore magna aliqua. Ut enim ad minim veniam–quis.</p>
+				</div>
+			</div>
+			<form class="hero__form" action="" method="post">
+				<label class="hero__form-label visually-hidden" for="search-news">Поиск новостей</label>
+				<div class="hero__form-wrapper">
+					<input id="search-news" class="hero__form-search" name="search-news" type="search" placeholder="Search...">
+				</div>
+			</form>
+		</section>
+
+		<section class="news section">
+			<div class="news__container container">
+				<h2 class="news__title section-title">Latest Posts</h2>
+
+				<div class="news__tabs">
+					<div class="news__nav">
+						<button class="news__button _active" data-tab="news-all">All</button>
+						<button class="news__button" data-tab="news-business">Business</button>
+						<button class="news__button" data-tab="news-news">News</button>
+						<button class="news__button" data-tab="news-tips">Tips&nbsp;&&nbsp;Trick</button>
+						<button class="news__button" data-tab="news-podcast">Podcast</button>
+						<button class="news__button" data-tab="news-productivity">Productivity</button>
+					</div>
+
+					<div class="news__content">
+						<div id="news-all" class="news__grid _active">
+							<article class="news__card">
+								<img class="news__card-img" src="../img/news/photo-1.jpg" alt="photo" width="538" height="320" loading="lazy">
+								<p class="news__card-about">PODCAST</p>
+								<a class="news__card-link" href="/">
+									<h3 class="news__card-title card-title-large">Setup your own podcast</h3>
+								</a>
+								<p class="news__card-description card-caption">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+									dolore magna aliqua. Ut enim ad minimvel iam, quis nostrud exercitation ullamco laboris... Lorem ipsum
+									dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+									magna aliqua. Ut enim ad minimvel iam, quis nostrud exercitation ullamco laboris... </p>
+								<div class="news__card-row">
+									<div class="news__card-tags">
+										<a class="news__card-tag" href="/">business</a> <a class="news__card-tag" href="/">startup</a>
+									</div>
+									<time datetime="2021-09-14">Sep 14, 2021</time>
+								</div>
+							</article>
+							<article class="news__card">
+								<img class="news__card-img" src="../img/news/photo-2.jpg" alt="photo" width="538" height="320" loading="lazy">
+								<p class="news__card-about">PODCAST</p>
+								<a class="news__card-link" href="/">
+									<h3 class="news__card-title card-title-large">Setup your own podcast</h3>
+								</a>
+								<p class="news__card-description card-caption">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+									sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minimvel iam, quis
+									nostrud exercitation ullamco laboris...</p>
+								<div class="news__card-row">
+									<div class="news__card-tags">
+										<a class="news__card-tag" href="/">business</a> <a class="news__card-tag" href="/">startup</a>
+									</div>
+									<time datetime="2021-09-14">Sep 14, 2021</time>
+								</div>
+							</article>
+						</div>
+						<div id="news-business" class="news__grid"></div>
+						<div id="news-news" class="news__grid">
+						</div>
+						<div id="news-tips" class="news__grid">
+						</div>
+						<div id="news-podcast" class="news__grid"></div>
+						<div id="news-productivity" class="news__grid"></div>
+					</div>
+
+		</section>
+
+		<section class="download section">
+			<div class="download__container container">
+				<p class="download__app-status">beta</p>
+				<h2 class="download__title section-title">Available now Pod of Cast App</h2>
+				<p class="download__description section-description">We just launched our podcast app!</p>
+				<a class="download__link button" href="/">download now</a>
+				<div class="download__info">
+					<p class="download__info-text small-text">
+						Content also available on: </p>
+					<div class="download__info-row">
+						<div class="download__info-img download__info-img--googlePodcasts"></div>
+						<div class="download__info-img download__info-img--spotify"></div>
+						<div class="download__info-img download__info-img--youtube"></div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<footer class="footer section">
+		<div class="footer__container container">
+			<div class="footer__top">
+				<div class="footer__content">
+					<div class="logo">
+						<a class="logo__link" href="./../index.html"></a>
+						<time class="logo__year" datetime="2021-01-01">©2021.</time>
+					</div>
+					<p class="footer__content-text">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit </p>
+					<ul class="footer__social-list">
+						<li class="footer__social-item">
+							<a class="footer__social-link footer__social-link--twitter" href="https://x.com/" target="_blank"> </a>
+						</li>
+						<li class="footer__social-item">
+							<a class="footer__social-link footer__social-link--instagram" href="https://www.instagram.com/" target="_blank"> </a>
+						</li>
+						<li class="footer__social-item">
+							<a class="footer__social-link footer__social-link--tiktok" href="https://www.tiktok.com/" target="_blank"> </a>
+						</li>
+					</ul>
+				</div>
+				<nav class="footer__nav">
+					<ul class="footer__nav-list">
+						<li class="footer__nav-item">
+							<a class="footer__nav-link" href="./about.html">About</a>
+						</li>
+						<li class="footer__nav-item">
+							<a class="footer__nav-link footer__nav-link--orange" href="">Testimonials</a>
+						</li>
+						<li class="footer__nav-item">
+							<a class="footer__nav-link" href="">Features</a>
+						</li>
+					</ul>
+					<ul class="footer__nav-list">
+						<li class="footer__nav-item">
+							<a class="footer__nav-link footer__nav-link--orange" href="">news</a>
+						</li>
+						<li class="footer__nav-item">
+							<a class="footer__nav-link" href="">Pricing</a>
+						</li>
+						<li class="footer__nav-item">
+							<a class="footer__nav-link" href="">Blog</a>
+						</li>
+					</ul>
+				</nav>
+				<div class="footer__platform">
+					<p class="footer__platform-text">Listen to news on your fav platform:</p>
+					<ul class="footer__platform-list">
+						<li class="footer__platform-item">
+							<a class="footer__platform-link footer__platform-link--googlepodcasts" href="https://podcasts.google.com/" target="_blank"> </a>
+						</li>
+						<li class="footer__platform-item">
+							<a class="footer__platform-link footer__platform-link--spotify" href="https://open.spotify.com/" target="_blank"> </a>
+						</li>
+						<li class="footer__platform-item">
+							<a class="footer__platform-link footer__platform-link--youtube" href="https://www.youtube.com" target="_blank"> </a>
+						</li>
+					</ul>
+					<p class="footer__platform-text">App available on:</p>
+					<ul class="footer__store-list">
+						<li class="footer__store-item">
+							<a class="footer__store-link footer__store-link--appstore" href="https://www.apple.com/app-store/" target="_blank"> </a>
+						</li>
+						<li class="footer__store-item">
+							<a class="footer__store-link footer__store-link--googleplay" href="https://play.google.com/store/" target="_blank"> </a>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="footer__bottom-row">
+				<p class="footer__bottom-text">
+					©2022. All Rights Reserved. <span class="orange-text">Pod of Cast</span>
+				</p>
+				<div class="footer__bottom-links">
+					<a class="footer__bottom-link" href="/">Terms</a> <a class="footer__bottom-link" href="/">Privacy</a>
+				</div>
+			</div>
+		</div>
+	</footer>
+</div>
+
+<!-- scripts -->
+<script src="../js/swiper-bundle.min.js"></script>
+<script src="../js/main.js"></script>
 </body>
+
 </html>

@@ -1,37 +1,33 @@
-// получаем все кнопки навигации
-const tabsButtons = document.querySelectorAll('.episodes__button');
+// табы
+function setupTabs(buttonClass, gridClass) {
+    const tabsButtons = document.querySelectorAll(buttonClass);
 
-// Проходимся по всем кнопкам
-tabsButtons.forEach(btn => {
-    // вешаем на каждую кнопку обработчик события клик
-    btn.addEventListener('click', () => {
-        // Получаем предыдущую активную кнопку
-        const prevActiveItem = document.querySelector('.episodes__grid._active');
-        // Получаем предыдущую активную вкладку
-        const prevActiveButton = document.querySelector('.episodes__button._active');
+    tabsButtons.forEach(btn => {
+        btn.addEventListener('click', () => {
+            const prevActiveItem = document.querySelector(`${gridClass}._active`);
+            const prevActiveButton = document.querySelector(`${buttonClass}._active`);
 
-        // Проверяем есть или нет предыдущая активная кнопка
-        if (prevActiveButton) {
-            //Удаляем класс _active у предыдущей кнопки если она есть
-            prevActiveButton.classList.remove('_active');
-        }
+            if (prevActiveButton) {
+                prevActiveButton.classList.remove('_active');
+            }
+            if (prevActiveItem) {
+                prevActiveItem.classList.remove('_active');
+            }
 
-        // Проверяем есть или нет предыдущая активная вкладка
-        if (prevActiveItem) {
-            // Удаляем класс _active у предыдущей вкладки если она есть
-            prevActiveItem.classList.remove('_active');
-        }
-        // получаем id новой активной вкладки, который мы перем из атрибута data-tab у кнопки
-        const nextActiveItemId = `#${btn.getAttribute('data-tab')}`;
-        // получаем новую активную вкладку по id
-        const nextActiveItem = document.querySelector(nextActiveItemId);
+            const nextActiveItemId = `#${btn.getAttribute('data-tab')}`;
+            const nextActiveItem = document.querySelector(nextActiveItemId);
 
-        // добавляем класс _active кнопке на которую нажали
-        btn.classList.add('_active');
-        // добавляем класс _active новой выбранной вкладке
-        nextActiveItem.classList.add('_active');
+            btn.classList.add('_active');
+            nextActiveItem.classList.add('_active');
+        });
     });
-})
+}
+
+// Инициализация вкладок для .episodes__button и .episodes__grid
+setupTabs('.episodes__button', '.episodes__grid');
+// Инициализация вкладок для .news__button и .news__grid
+setupTabs('.news__button', '.news__grid');
+
 
 
 // слайде в hero section на главной странице

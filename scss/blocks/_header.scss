@@ -87,7 +87,7 @@
 
 .header__mobile-button {
     position: relative;
-    z-index: 3;
+    z-index: 4;
     display: none;
     width: 40px;
     height: 40px;
@@ -132,7 +132,7 @@
         position: absolute;
         top: 0px;
         right: -500px;
-        z-index: 3;
+        z-index: 4;
         flex-direction: column;
         justify-content: center;
         width: 500px;
