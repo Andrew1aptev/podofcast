@@ -31,7 +31,6 @@ body {
   min-height: 100%;
   overflow: hidden;
 }
-
 .main {
   flex-grow: 1;
 }
@@ -53,7 +52,18 @@ body {
     padding-bottom: 140px;
   }
 }
-
+.tag{
+  border: 1px solid var(--davysGrey-color);
+  border-radius: 4px;
+  text-decoration: none;
+  color: var(--davysGrey-color);
+  font-size: clamp(0.75rem, 0.7143rem + 0.1786vw, 0.875rem);
+  padding: 6px 12px;
+  transition: all .2s ease;
+}
+.tag:hover{
+  color: var(--vermillion-color);
+}
 .scribble-decor-orange,
 .scribble-decor {
   position: relative;

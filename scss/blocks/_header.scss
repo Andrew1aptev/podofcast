@@ -22,7 +22,10 @@
         column-gap: 175px;
     }
 }
-
+.header__nav{
+    position: relative;
+    z-index: 3;
+}
 .header__nav-list {
     display: flex;
     column-gap: 60px;
@@ -158,6 +161,8 @@
         align-items: center;
         width: 100%;
         font-size: 24px;
+        position: relative;
+        z-index: 3;
     }
 
     .header__buttons {
