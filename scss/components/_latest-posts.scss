@@ -1,0 +1,78 @@
+.latest-posts__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  position: relative;
+}
+
+.latest-posts__grid::before,
+.latest-posts__grid::after {
+  content: "";
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  z-index: -1;
+}
+
+.latest-posts__grid::before {
+  width: 225px;
+  height: 200px;
+  background-image: url('./../img/news/star-decor.svg');
+  left: -90px;
+  top: -74px;
+}
+
+.latest-posts__grid::after {
+  width: 240px;
+  height: 240px;
+  background-image: url('./../img/news/Scribble-decor.svg');
+  bottom: -150px;
+  right: -130px;
+}
+
+
+@media only screen and (max-width: 1024px) {
+  .latest-posts__grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.latest-posts__tabs {
+  display: flex;
+  flex-direction: column;
+}
+
+.latest-posts__nav {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 20px;
+  margin-bottom: 100px;
+  overflow: scroll;
+  border-bottom: 1.5px solid black;
+}
+
+@media only screen and (max-width: 768px) {
+  .latest-posts__nav {
+    border-bottom: none;
+  }
+}
+
+.latest-posts__button {
+  height: 52px;
+  padding-inline: 16px;
+  font-size: clamp(1.125rem, 1.0625rem + 0.3125vw, 1.4375rem);
+  color: var(--davysGrey-color);
+  cursor: pointer;
+  background: transparent;
+  border: none;
+}
+
+.latest-posts__button._active {
+  font-weight: 700;
+  color: var(--vermillion-color);
+}
+
+.latest-posts__grid:not(._active) {
+  display: none;
+}

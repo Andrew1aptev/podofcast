@@ -26,7 +26,7 @@ function setupTabs(buttonClass, gridClass) {
 // Инициализация вкладок для .episodes__button и .episodes__grid
 setupTabs('.episodes__button', '.episodes__grid');
 // Инициализация вкладок для .news__button и .news__grid
-setupTabs('.news__button', '.news__grid');
+setupTabs('.latest-posts__button', '.latest-posts__grid');
 
 
 
