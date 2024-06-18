@@ -1,0 +1,77 @@
+.recent-episodes {
+  background-color: var(--champagne-color);
+}
+
+.recent-episodes__container {
+  display: flex;
+  flex-direction: column;
+}
+
+.recent-episodes__grid {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  margin-bottom: 100px;
+}
+
+.recent-episodes__content {
+  position: relative;
+  z-index: 1;
+}
+
+.recent-episodes__content::before {
+  position: absolute;
+  bottom: -143px;
+  left: -122px;
+  z-index: -1;
+  width: 240px;
+  height: 240px;
+  content: "";
+  background-image: url("./../img/episode-podcast/scribble.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.recent-episodes__content .recent-episodes__grid._active {
+  margin-bottom: 0px;
+}
+
+
+.recent-episodes__platform {
+  display: flex;
+  column-gap: 10px;
+  align-self: flex-end;
+  color: white;
+}
+
+.recent-episodes__text {
+  font-size: var(--card-title-large-fs);
+  font-weight: 700;
+  line-height: 140%;
+  color: var(--pewterBlue-color);
+  letter-spacing: -0.08em;
+}
+
+.recent-episodes__link-all {
+  display: inline-flex;
+  align-items: center;
+  align-self: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+
+@media only screen and (max-width: 768px) {
+  .recent-episodes__grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .recent-episodes__grid::after {
+    top: -63px;
+    right: -48px;
+    width: 91px;
+    height: 99px;
+  }
+}
