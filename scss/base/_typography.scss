@@ -1,0 +1,65 @@
+.main-title {
+  font-size: var(--main-title-fs);
+  line-height: 100%;
+  letter-spacing: -0.04em;
+}
+
+.section-title {
+  margin-bottom: 20px;
+  font-size: var(--section-title-fs);
+  line-height: 120%;
+  letter-spacing: -0.02em;
+}
+
+
+.section-subtitle {
+  margin-bottom: 80px;
+  font-size: var(--section-subtitle-fs);
+  font-weight: 700;
+  text-align: center;
+}
+
+.card-title-large {
+  font-size: var(--card-title-large-fs);
+}
+
+
+.section-description {
+  margin-bottom: 100px;
+  font-size: var(----section-description-fs);
+  line-height: 160%;
+  color: var(--davysGrey-color);
+}
+
+.main-title,
+.section-title,
+.section-description {
+  text-align: center;
+}
+
+.section-subtitle,
+.card-title-large {
+  line-height: 140%;
+  letter-spacing: -0.02em;
+}
+
+.card-caption,
+.small-text {
+  font-size: clamp(0.813rem, 0.759rem + 0.268vw, 1rem);
+  font-weight: 500;
+  line-height: 160%;
+  color: var(--davysGrey-color);
+}
+
+.bold-text {
+  font-weight: 700;
+}
+
+.underline-text {
+  color: var(--davysGrey-color);
+  text-decoration: underline;
+}
+
+.orange-text {
+  color: var(--vermillion-color);
+}

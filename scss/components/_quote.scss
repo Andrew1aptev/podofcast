@@ -1,0 +1,94 @@
+.quote {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding-top: 136px;
+  padding-bottom: 40px;
+  font-size: var(--quote-fs);
+  line-height: 140%;
+  letter-spacing: -0.02em;
+  background-color: var(--champagne-color);
+  border-radius: 8px;
+}
+
+.quote::before,
+.quote::after {
+  position: absolute;
+  content: "";
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.quote::before {
+  bottom: 49px;
+  left: -60px;
+  width: 120px;
+  height: 120px;
+  background-image: url("./../img/quote/swirl-decor.svg");
+}
+
+.quote::after {
+  top: -60px;
+  right: -60px;
+  width: 200px;
+  height: 200px;
+  background-image: url("./../img/quote/star-decor.svg");
+}
+
+
+.quote__text {
+  position: relative;
+  max-width: 708px;
+  margin-bottom: 40px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.quote__text::before {
+  position: absolute;
+  top: -50px;
+  right: 50%;
+  font-size: 96px;
+  color: var(--vermillion-color);
+  content: "“";
+  transform: translateX(50%);
+}
+
+.quote__row {
+  display: flex;
+  column-gap: 10px;
+  align-items: center;
+}
+
+.quote__author-name,
+.quote__author-job {
+  font-size: 14px;
+}
+
+.quote__author-job {
+  display: flex;
+  column-gap: 8px;
+  align-items: center;
+  font-weight: 700;
+}
+
+@media only screen and (max-width: 1023px) {
+  .quote::before {
+    bottom: -26px;
+    left: -29px;
+    width: 60px;
+    height: 60px;
+  }
+
+  .quote::after {
+    width: 100px;
+    height: 100px;
+  }
+
+  .quote__row {
+    flex-direction: column;
+  }
+}
