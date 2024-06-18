@@ -21,9 +21,13 @@
   overflow: scroll;
   border-bottom: 1.5px solid black;
 }
-
 @media only screen and (max-width: 768px) {
+  .latest-episode__grid {
+    grid-template-columns: 1fr;
+  }
+
   .latest-episode__nav {
+
     border-bottom: none;
   }
 }
