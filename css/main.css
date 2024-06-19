@@ -2427,6 +2427,13 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  column-gap: 10px;
+}
+.episode-podcast__button--play:hover {
+  color: var(--white-color);
+}
+.episode-podcast__button--play:hover .orange-text {
+  color: var(--white-color);
 }
 .episode-podcast__tags {
   display: flex;
@@ -2471,9 +2478,6 @@ body {
   }
   .episode-podcast__buttons {
     flex-direction: column;
-  }
-  .episode-podcast__button--play {
-    column-gap: 10px;
   }
   .episode-podcast__tags-text {
     margin-right: 5px;

@@ -124,8 +124,14 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    column-gap: 10px;
   }
-
+  &__button--play:hover {
+    color: var(--white-color);
+  }
+  &__button--play:hover .orange-text{
+    color: var(--white-color);
+  }
   &__play-img {
   }
 
@@ -178,9 +184,7 @@
     &__buttons {
       flex-direction: column;
     }
-    &__button--play {
-      column-gap: 10px;
-    }
+
     &__tags-text {
       margin-right: 5px;
     }
