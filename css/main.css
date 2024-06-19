@@ -2350,22 +2350,22 @@ body {
   box-shadow: 12px 12px 0 0 #81adc8;
 }
 .episode-podcast__cover--1 {
-  background-image: url("../../img/episode-podcast/episode-podcast-1.webp");
+  background-image: url("./../img/episode-podcast/episode-podcast-1.webp");
 }
 .episode-podcast__cover--2 {
-  background-image: url("../../img/episode-podcast/episode-podcast-2.webp");
+  background-image: url("./../img/episode-podcast/episode-podcast-2.webp");
 }
 .episode-podcast__cover--3 {
-  background-image: url("../../img/episode-podcast/episode-podcast-3.webp");
+  background-image: url("./../img/episode-podcast/episode-podcast-3.webp");
 }
 .episode-podcast__cover--4 {
-  background-image: url("../../img/episode-podcast/episode-podcast-4.webp");
+  background-image: url("./../img/episode-podcast/episode-podcast-4.webp");
 }
 .episode-podcast__cover--5 {
-  background-image: url("../../img/episode-podcast/episode-podcast-5.webp");
+  background-image: url("./../img/episode-podcast/episode-podcast-5.webp");
 }
 .episode-podcast__cover--6 {
-  background-image: url("../../img/episode-podcast/episode-podcast-6.webp");
+  background-image: url("./../img/episode-podcast/episode-podcast-6.webp");
 }
 .episode-podcast__platforms {
   display: flex;
