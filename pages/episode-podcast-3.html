@@ -1,0 +1,538 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="About our podcast platform, its creators and its history.">
+	<link href="../css/main.css" rel="stylesheet">
+	<title>PODOFCAST - Your Daily Podcast</title>
+</head>
+
+<body class="page">
+<div class="page__wrapper">
+	<header class="header">
+		<div class="header__container container">
+			<div class="logo">
+				<a class="logo__link" href="../index.html"></a>
+			</div>
+			<div class="header__row header__mobile-menu open">
+				<nav class="header__nav">
+					<ul class="header__nav-list">
+						<li class="header__nav-item">
+							<a class="header__nav-link" href="/">Episodes</a>
+						</li>
+						<li class="header__nav-item">
+							<a class="header__nav-link" href="./about.html">About</a>
+						</li>
+						<li class="header__nav-item header__nav-item--arrow-down">
+							<a class="header__nav-link" href="/">More</a>
+						</li>
+					</ul>
+				</nav>
+				<div class="header__buttons">
+					<a class="header__link button button--transparent" href="/">RECENT EPISODES </a>
+					<button class="header__button button" type="button">SUBSCRIBE</button>
+				</div>
+			</div>
+			<div class="header__mobile-button">
+				<span class="header__mobile-line"></span> <span class="header__mobile-line"></span>
+				<span class="header__mobile-line"></span>
+			</div>
+		</div>
+	</header>
+
+	<main class="main">
+
+		<section class="episode-podcast">
+			<div class="episode-podcast__container container">
+				<div class="episode-podcast__wrapper main-decor">
+					<div class="episode-podcast__cover episode-podcast__cover--3">
+						<div class="episode-podcast__platforms">
+							<img class="episode-podcast__platform" src="../icons/episode-platform/google-podcast-icon.svg" alt="platform icon" width="30" height="30" loading="lazy">
+							<img class="episode-podcast__platform" src="../icons/episode-platform/spotify-icon.svg" alt="platform icon" width="30" height="30" loading="lazy">
+							<img class="episode-podcast__platform" src="../icons/episode-platform/youtube-icon.svg" alt="platform icon" width="30" height="30" loading="lazy">
+						</div>
+						<p class="episode-podcast__cover-name">Self–confidence</p>
+					</div>
+					<div class="episode-podcast__content">
+						<div class="episode-podcast__row first-row">
+							<div class="episode-podcast__number orange-text bold-text">Episode 3</div>
+							<div class="episode-podcast__featured orange-text">FEATURED EPISODE</div>
+						</div>
+						<h1 class="episode-podcast__title">
+							How to Deal with Self–Confidence
+						</h1>
+						<p class="episode-podcast__description">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, eiusmod tempor incididunt ut labore et dolore
+							magna aliqua. Ut enim ad minim veniam, quis nostrud. </p>
+						<div class="episode-podcast__row second-row">
+							<div class="episode-podcast__author">
+								<img class="episode-podcast__avatar" src="./../img/episode-podcast/avatars/jane-doe-avatar.svg" alt="jane doe avatar" width="36" height="36" loading="lazy">
+								<p class="episode-podcast__name">Hosted by: <span class="orange-text bold-text">Jane Doe</span></p>
+							</div>
+							<time class="episode-podcast__date" datetime="2021-09-22">Sep 22, 2021</time>
+						</div>
+						<div class="episode-podcast__buttons">
+							<button class="episode-podcast__button button" type="button">subscribe</button>
+							<button class="episode-podcast__button episode-podcast__button--play button button--transparent" type="button">
+								<img class="episode-podcast__play-img" src="./../img/play-icon.svg" alt="play icon" width="24" height="24" loading="lazy">
+								LISTEN NOW <span class="orange-text">(46 min)</span>
+							</button>
+						</div>
+					</div>
+
+				</div>
+				<div class="episode-podcast__tags">
+					<p class="episode-podcast__tags-text">Tags:</p>
+					<a class="episode-podcast__tag" href="">self-esteem</a>
+					<a class="episode-podcast__tag" href="">health</a>
+				</div>
+			</div>
+		</section>
+
+		<section class="latest-episode section scribble-decor-orange">
+			<div class="latest-episode__container container">
+				<div class="latest-episode__wrapper">
+					<h2 class="latest-episode__title section-title">Latest Episode</h2>
+				</div>
+
+
+				<div class="latest-episode__tabs">
+					<div class="latest-episode__nav">
+						<button class="latest-episode__button _active" data-tab="latest-episode-all">All</button>
+						<button class="latest-episode__button" data-tab="latest-episode-business">Business</button>
+						<button class="latest-episode__button" data-tab="latest-episode-comedy">Comedy</button>
+						<button class="latest-episode__button" data-tab="latest-episode-education">Education</button>
+						<button class="latest-episode__button" data-tab="latest-episode-health">Health</button>
+						<button class="latest-episode__button" data-tab="latest-episode-news">News</button>
+						<button class="latest-episode__button" data-tab="latest-episode-tech">Tech</button>
+					</div>
+
+					<div class="latest-episode__content">
+						<div class="latest-episode__grid _active" id="latest-episode-all">
+							<article class="episode-card">
+								<div class="episode-card__top">
+									<div class="episode-card__cover episode-card__cover--6">
+										<div class="episode-card__platform">
+											<img class="episode-card__platform-img" src="../icons/episode-platform/google-podcast-icon.svg" alt="icon" width="12" height="12" loading="lazy">
+											<img class="episode-card__platform-img" src="../icons/episode-platform/spotify-icon.svg" alt="icon" width="12" height="12" loading="lazy">
+											<img class="episode-card__platform-img" src="../icons/episode-platform/youtube-icon.svg" alt="icon" width="12" height="12" loading="lazy">
+										</div>
+									</div>
+									<div class="episode-card__content">
+										<p class="episode-card__number">ep 6</p>
+										<h3 class="episode-card__title">
+											<a class="episode-card__link" href="./episode-podcast-6.html"
+												aria-label="go to page to listen to podcast"> Pandemic Becoming
+												Endemic </a>
+										</h3>
+
+										<p class="episode-card__description card-caption">Lorem ipsum dolor sit amet, consectetur adipiscing
+											elit. Curabitur ac ultrices odio.
+											Lorem ipsum dolor sit amet, consectetur adipiscing
+											elit. Curabitur ac ultrices odio.
+											Lorem ipsum dolor sit amet, consectetur adipiscing
+											elit. Curabitur ac ultrices odio.
+										</p>
+									</div>
+								</div>
+
+								<div class="episode-card__bottom">
+									<div class="episode-card__tags">
+										<a class="tag" href="/"> covid-19 </a> <a class="tag" href="/"> health </a>
+									</div>
+									<div class="episode-card__authors">
+										<p class="episode-card__hosted">Hosted by: </p>
+										<img class="episode-card__avatar" src="../img/episodes/avatar-1.png" alt="avatar" width="30" height="30" loading="lazy">
+										<img class="episode-card__avatar" src="../img/episodes/avatar-2.png" alt="avatar" width="30" height="30" loading="lazy">
+									</div>
+								</div>
+							</article>
+							<article class="episode-card">
+								<div class="episode-card__top">
+									<div class="episode-card__cover episode-card__cover--5">
+										<div class="episode-card__platform">
+											<img class="episode-card__platform-img" src="../icons/episode-platform/google-podcast-icon.svg" alt="icon" width="12" height="12" loading="lazy">
+											<img class="episode-card__platform-img" src="../icons/episode-platform/spotify-icon.svg" alt="icon" width="12" height="12" loading="lazy">
+											<img class="episode-card__platform-img" src="../icons/episode-platform/youtube-icon.svg" alt="icon" width="12" height="12" loading="lazy">
+										</div>
+									</div>
+									<div class="episode-card__content">
+										<p class="episode-card__number">ep 5</p>
+										<h3 class="episode-card__title">
+											<a class="episode-card__link" href="./episode-podcast-5.html"
+												aria-label="go to page to listen to podcast"> Tesla Autopilot
+												Controversy </a>
+										</h3>
+
+										<p class="episode-card__description card-caption">Lorem ipsum dolor sit amet, consectetur adipiscing
+											elit. Curabitur ac ultrices odio. </p>
+									</div>
+								</div>
+								<div class="episode-card__bottom">
+									<div class="episode-card__tags">
+										<a class="tag" href="/"> automation </a> <a class="tag" href="/"> tech </a>
+									</div>
+									<div class="episode-card__authors">
+										<p class="episode-card__hosted">Hosted by: </p>
+										<img class="episode-card__avatar" src="../img/episodes/avatar-1.png" alt="avatar" width="30" height="30" loading="lazy">
+										<img class="episode-card__avatar" src="../img/episodes/avatar-2.png" alt="avatar" width="30" height="30" loading="lazy">
+									</div>
+								</div>
+							</article>
+							<article class="episode-card">
+								<div class="episode-card__top">
+									<div class="episode-card__cover episode-card__cover--4">
+										<div class="episode-card__platform">
+											<img class="episode-card__platform-img" src="../icons/episode-platform/google-podcast-icon.svg" alt="icon" width="12" height="12" loading="lazy">
+											<img class="episode-card__platform-img" src="../icons/episode-platform/spotify-icon.svg" alt="icon" width="12" height="12" loading="lazy">
+											<img class="episode-card__platform-img" src="../icons/episode-platform/youtube-icon.svg" alt="icon" width="12" height="12" loading="lazy">
+										</div>
+									</div>
+									<div class="episode-card__content">
+										<p class="episode-card__number">ep 4</p>
+										<h3 class="episode-card__title">
+											<a class="episode-card__link" href="./episode-podcast-4.html"
+												aria-label="go to page to listen to podcast"> Women's Rights?
+												Is it alright? </a>
+										</h3>
+
+										<p class="episode-card__description card-caption">Lorem ipsum dolor sit amet, consectetur adipiscing
+											elit. Curabitur ac ultrices odio. </p>
+									</div>
+								</div>
+								<div class="episode-card__bottom">
+									<div class="episode-card__tags">
+										<a class="tag" href="/"> women’s rights </a>
+									</div>
+									<div class="episode-card__authors">
+										<p class="episode-card__hosted">Hosted by: </p>
+										<img class="episode-card__avatar" src="../img/episodes/avatar-1.png" alt="avatar" width="30" height="30" loading="lazy">
+										<img class="episode-card__avatar" src="../img/episodes/avatar-2.png" alt="avatar" width="30" height="30" loading="lazy">
+									</div>
+								</div>
+							</article>
+							<article class="episode-card">
+								<div class="episode-card__top">
+									<div class="episode-card__cover episode-card__cover--3">
+										<div class="episode-card__platform">
+											<img class="episode-card__platform-img" src="../icons/episode-platform/google-podcast-icon.svg" alt="icon" width="12" height="12" loading="lazy">
+											<img class="episode-card__platform-img" src="../icons/episode-platform/spotify-icon.svg" alt="icon" width="12" height="12" loading="lazy">
+											<img class="episode-card__platform-img" src="../icons/episode-platform/youtube-icon.svg" alt="icon" width="12" height="12" loading="lazy">
+										</div>
+									</div>
+									<div class="episode-card__content">
+										<p class="episode-card__number">ep 3</p>
+										<h3 class="episode-card__title">
+											<a class="episode-card__link" href="./episode-podcast-3.html"
+												aria-label="go to page to listen to podcast"> How to Deal with
+												Self–Confidence </a>
+										</h3>
+
+										<p class="episode-card__description card-caption">Lorem ipsum dolor sit amet, consectetur adipiscing
+											elit. Curabitur ac ultrices odio. </p>
+									</div>
+								</div>
+								<div class="episode-card__bottom">
+									<div class="episode-card__tags">
+										<a class="tag" href="/"> self-esteem </a> <a class="tag" href="/"> health </a>
+									</div>
+									<div class="episode-card__authors">
+										<p class="episode-card__hosted">Hosted by: </p>
+										<img class="episode-card__avatar" src="../img/episodes/avatar-1.png" alt="avatar" width="30" height="30" loading="lazy">
+										<img class="episode-card__avatar" src="../img/episodes/avatar-2.png" alt="avatar" width="30" height="30" loading="lazy">
+									</div>
+								</div>
+							</article>
+							<article class="episode-card">
+								<div class="episode-card__top">
+									<div class="episode-card__cover episode-card__cover--2">
+										<div class="episode-card__platform">
+											<img class="episode-card__platform-img" src="../icons/episode-platform/google-podcast-icon.svg" alt="icon" width="12" height="12" loading="lazy">
+											<img class="episode-card__platform-img" src="../icons/episode-platform/spotify-icon.svg" alt="icon" width="12" height="12" loading="lazy">
+											<img class="episode-card__platform-img" src="../icons/episode-platform/youtube-icon.svg" alt="icon" width="12" height="12" loading="lazy">
+										</div>
+									</div>
+									<div class="episode-card__content">
+										<p class="episode-card__number">ep 2</p>
+										<h3 class="episode-card__title">
+											<a class="episode-card__link" href="./episode-podcast-2.html"
+												aria-label="go to page to listen to podcast"> Type of Social
+												Classes of People </a>
+										</h3>
+
+										<p class="episode-card__description card-caption">Lorem ipsum dolor sit amet, consectetur adipiscing
+											elit. Curabitur ac ultrices odio. </p>
+									</div>
+								</div>
+								<div class="episode-card__bottom">
+									<div class="episode-card__tags">
+										<a class="tag" href="/"> social class </a> <a class="tag" href="/"> health </a>
+									</div>
+									<div class="episode-card__authors">
+										<p class="episode-card__hosted">Hosted by: </p>
+										<img class="episode-card__avatar" src="../img/episodes/avatar-1.png" alt="avatar" width="30" height="30" loading="lazy">
+										<img class="episode-card__avatar" src="../img/episodes/avatar-2.png" alt="avatar" width="30" height="30" loading="lazy">
+									</div>
+								</div>
+							</article>
+							<article class="episode-card">
+								<div class="episode-card__top">
+									<div class="episode-card__cover episode-card__cover--1">
+										<div class="episode-card__platform">
+											<img class="episode-card__platform-img" src="../icons/episode-platform/google-podcast-icon.svg" alt="icon" width="12" height="12" loading="lazy">
+											<img class="episode-card__platform-img" src="../icons/episode-platform/spotify-icon.svg" alt="icon" width="12" height="12" loading="lazy">
+											<img class="episode-card__platform-img" src="../icons/episode-platform/youtube-icon.svg" alt="icon" width="12" height="12" loading="lazy">
+										</div>
+									</div>
+									<div class="episode-card__content">
+										<p class="episode-card__number">ep 1</p>
+
+										<h3 class="episode-card__title">
+											<a class="episode-card__link" href="./episode-podcast-1.html" aria-label="go to page to listen to podcast">
+												Are you a Perplexed Mind Person? </a>
+										</h3>
+
+										<p class="episode-card__description card-caption">Lorem ipsum dolor sit amet, consectetur adipiscing
+											elit. Curabitur ac ultrices odio. </p>
+									</div>
+								</div>
+								<div class="episode-card__bottom">
+									<div class="episode-card__tags">
+										<a class="tag" href="/">mind-behaviour</a> <a class="tag" href="/">health</a>
+									</div>
+									<div class="episode-card__authors">
+										<p class="episode-card__hosted">Hosted by: </p>
+										<img class="episode-card__avatar" src="../img/episodes/avatar-1.png" alt="avatar" width="30" height="30" loading="lazy">
+										<img class="episode-card__avatar" src="../img/episodes/avatar-2.png" alt="avatar" width="30" height="30" loading="lazy">
+									</div>
+								</div>
+							</article>
+						</div>
+						<div class="latest-episode__grid" id="latest-episode-business">
+
+						</div>
+						<div class="latest-episode__grid" id="latest-episode-comedy">
+
+						</div>
+						<div class="latest-episode__grid" id="latest-episode-education">
+
+						</div>
+						<div class="latest-episode__grid" id="latest-episode-health">
+							<article class="episode-card">
+								<div class="episode-card__top">
+									<div class="episode-card__cover episode-card__cover--6">
+										<div class="episode-card__platform">
+											<img class="episode-card__platform-img" src="../icons/episode-platform/google-podcast-icon.svg" alt="icon" width="12" height="12" loading="lazy">
+											<img class="episode-card__platform-img" src="../icons/episode-platform/spotify-icon.svg" alt="icon" width="12" height="12" loading="lazy">
+											<img class="episode-card__platform-img" src="../icons/episode-platform/youtube-icon.svg" alt="icon" width="12" height="12" loading="lazy">
+										</div>
+									</div>
+									<div class="episode-card__content">
+										<p class="episode-card__number">ep 6</p>
+										<h3 class="episode-card__title">
+											<a class="episode-card__link" href="/" aria-label="go to page to listen to podcast"> Pandemic Becoming
+												Endemic </a>
+										</h3>
+
+										<p class="episode-card__description card-caption">Lorem ipsum dolor sit amet, consectetur adipiscing
+											elit. Curabitur ac ultrices odio. </p>
+									</div>
+								</div>
+
+								<div class="episode-card__bottom">
+									<div class="episode-card__tags">
+										<a class="tag" href="/"> covid-19 </a> <a class="tag" href="/"> health </a>
+									</div>
+									<div class="episode-card__authors">
+										<p class="episode-card__hosted">Hosted by: </p>
+										<img class="episode-card__avatar" src="../img/episodes/avatar-1.png" alt="avatar" width="30" height="30" loading="lazy">
+										<img class="episode-card__avatar" src="../img/episodes/avatar-2.png" alt="avatar" width="30" height="30" loading="lazy">
+									</div>
+								</div>
+							</article>
+							<article class="episode-card">
+								<div class="episode-card__top">
+									<div class="episode-card__cover episode-card__cover--1">
+										<div class="episode-card__platform">
+											<img class="episode-card__platform-img" src="../icons/episode-platform/google-podcast-icon.svg" alt="icon" width="12" height="12" loading="lazy">
+											<img class="episode-card__platform-img" src="../icons/episode-platform/spotify-icon.svg" alt="icon" width="12" height="12" loading="lazy">
+											<img class="episode-card__platform-img" src="../icons/episode-platform/youtube-icon.svg" alt="icon" width="12" height="12" loading="lazy">
+										</div>
+									</div>
+									<div class="episode-card__content">
+										<p class="episode-card__number">ep 1</p>
+
+										<h3 class="episode-card__title">
+											<a class="episode-card__link" href="./pages/episode-podcast-1.html" aria-label="go to page to listen to podcast">
+												Are you a Perplexed Mind Person? </a>
+										</h3>
+
+										<p class="episode-card__description card-caption">Lorem ipsum dolor sit amet, consectetur adipiscing
+											elit. Curabitur ac ultrices odio. </p>
+									</div>
+								</div>
+								<div class="episode-card__bottom">
+									<div class="episode-card__tags">
+										<a class="tag" href="/">mind-behaviour</a> <a class="tag" href="/">health</a>
+									</div>
+									<div class="episode-card__authors">
+										<p class="episode-card__hosted">Hosted by: </p>
+										<img class="episode-card__avatar" src="../img/episodes/avatar-1.png" alt="avatar" width="30" height="30" loading="lazy">
+										<img class="episode-card__avatar" src="../img/episodes/avatar-2.png" alt="avatar" width="30" height="30" loading="lazy">
+									</div>
+								</div>
+							</article>
+						</div>
+						<div class="latest-episode__grid" id="latest-episode-news">
+
+						</div>
+						<div class="latest-episode__grid" id="latest-episode-tech">
+							<article class="episode-card">
+								<div class="episode-card__top">
+									<div class="episode-card__cover episode-card__cover--5">
+										<div class="episode-card__platform">
+											<img class="episode-card__platform-img" src="../icons/episode-platform/google-podcast-icon.svg" alt="icon" width="12" height="12" loading="lazy">
+											<img class="episode-card__platform-img" src="../icons/episode-platform/spotify-icon.svg" alt="icon" width="12" height="12" loading="lazy">
+											<img class="episode-card__platform-img" src="../icons/episode-platform/youtube-icon.svg" alt="icon" width="12" height="12" loading="lazy">
+										</div>
+									</div>
+									<div class="episode-card__content">
+										<p class="episode-card__number">ep 5</p>
+										<h3 class="episode-card__title">
+											<a class="episode-card__link" href="/" aria-label="go to page to listen to podcast"> Tesla Autopilot
+												Controversy </a>
+										</h3>
+
+										<p class="episode-card__description card-caption">Lorem ipsum dolor sit amet, consectetur adipiscing
+											elit. Curabitur ac ultrices odio. </p>
+									</div>
+								</div>
+								<div class="episode-card__bottom">
+									<div class="episode-card__tags">
+										<a class="tag" href="/"> automation </a> <a class="tag" href="/"> tech </a>
+									</div>
+									<div class="episode-card__authors">
+										<p class="episode-card__hosted">Hosted by: </p>
+										<img class="episode-card__avatar" src="../img/episodes/avatar-1.png" alt="avatar" width="30" height="30" loading="lazy">
+										<img class="episode-card__avatar" src="../img/episodes/avatar-2.png" alt="avatar" width="30" height="30" loading="lazy">
+									</div>
+								</div>
+							</article>
+						</div>
+					</div>
+				</div>
+
+
+			</div>
+		</section>
+
+		<section class="download section">
+			<div class="download__container container">
+				<p class="download__app-status">beta</p>
+				<h2 class="download__title section-title">Available now Pod of Cast App</h2>
+				<p class="download__description section-description">We just launched our podcast app!</p>
+				<a class="download__link button" href="/">download now</a>
+				<div class="download__info">
+					<p class="download__info-text small-text">
+						Content also available on: </p>
+					<div class="download__info-row">
+						<div class="download__info-img download__info-img--googlePodcasts"></div>
+						<div class="download__info-img download__info-img--spotify"></div>
+						<div class="download__info-img download__info-img--youtube"></div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<footer class="footer section">
+		<div class="footer__container container">
+			<div class="footer__top">
+				<div class="footer__content">
+					<div class="logo">
+						<a class="logo__link" href="./../index.html"></a>
+						<time class="logo__year" datetime="2021-01-01">©2021.</time>
+					</div>
+					<p class="footer__content-text">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit </p>
+					<ul class="footer__social-list">
+						<li class="footer__social-item">
+							<a class="footer__social-link footer__social-link--twitter" href="https://x.com/" target="_blank"> </a>
+						</li>
+						<li class="footer__social-item">
+							<a class="footer__social-link footer__social-link--instagram" href="https://www.instagram.com/" target="_blank"> </a>
+						</li>
+						<li class="footer__social-item">
+							<a class="footer__social-link footer__social-link--tiktok" href="https://www.tiktok.com/" target="_blank"> </a>
+						</li>
+					</ul>
+				</div>
+				<nav class="footer__nav">
+					<ul class="footer__nav-list">
+						<li class="footer__nav-item">
+							<a class="footer__nav-link" href="./about.html">About</a>
+						</li>
+						<li class="footer__nav-item">
+							<a class="footer__nav-link footer__nav-link--orange" href="">Testimonials</a>
+						</li>
+						<li class="footer__nav-item">
+							<a class="footer__nav-link" href="">Features</a>
+						</li>
+					</ul>
+					<ul class="footer__nav-list">
+						<li class="footer__nav-item">
+							<a class="footer__nav-link footer__nav-link--orange" href="">Episodes</a>
+						</li>
+						<li class="footer__nav-item">
+							<a class="footer__nav-link" href="">Pricing</a>
+						</li>
+						<li class="footer__nav-item">
+							<a class="footer__nav-link" href="">Blog</a>
+						</li>
+					</ul>
+				</nav>
+				<div class="footer__platform">
+					<p class="footer__platform-text">Listen to episodes on your fav platform:</p>
+					<ul class="footer__platform-list">
+						<li class="footer__platform-item">
+							<a class="footer__platform-link footer__platform-link--googlepodcasts" href="https://podcasts.google.com/" target="_blank"> </a>
+						</li>
+						<li class="footer__platform-item">
+							<a class="footer__platform-link footer__platform-link--spotify" href="https://open.spotify.com/" target="_blank"> </a>
+						</li>
+						<li class="footer__platform-item">
+							<a class="footer__platform-link footer__platform-link--youtube" href="https://www.youtube.com" target="_blank"> </a>
+						</li>
+					</ul>
+					<p class="footer__platform-text">App available on:</p>
+					<ul class="footer__store-list">
+						<li class="footer__store-item">
+							<a class="footer__store-link footer__store-link--appstore" href="https://www.apple.com/app-store/" target="_blank"> </a>
+						</li>
+						<li class="footer__store-item">
+							<a class="footer__store-link footer__store-link--googleplay" href="https://play.google.com/store/" target="_blank"> </a>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="footer__bottom-row">
+				<p class="footer__bottom-text">
+					©2022. All Rights Reserved. <span class="orange-text">Pod of Cast</span>
+				</p>
+				<div class="footer__bottom-links">
+					<a class="footer__bottom-link" href="/">Terms</a> <a class="footer__bottom-link" href="/">Privacy</a>
+				</div>
+			</div>
+		</div>
+	</footer>
+</div>
+
+<!-- scripts -->
+<script src="../js/swiper-bundle.min.js"></script>
+<script src="../js/main.js"></script>
+</body>
+
+</html>

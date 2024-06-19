@@ -10,19 +10,37 @@
   }
 
   &__cover {
+    position: relative;
+    z-index: 3;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     width: 472px;
     height: 472px;
     padding: 25px;
-    background-image: url("../img/episode-podcast/episode-podcast-1/episode-podcast-1.webp");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
     box-shadow: 12px 12px 0 0 #81adc8;
-    position: relative;
-    z-index: 3;
+  }
+
+  &__cover--1 {
+    background-image: url("../../img/episode-podcast/episode-podcast-1.webp");
+  }
+  &__cover--2 {
+    background-image: url("../../img/episode-podcast/episode-podcast-2.webp");
+  }
+  &__cover--3 {
+    background-image: url("../../img/episode-podcast/episode-podcast-3.webp");
+  }
+  &__cover--4 {
+    background-image: url("../../img/episode-podcast/episode-podcast-4.webp");
+  }
+  &__cover--5 {
+    background-image: url("../../img/episode-podcast/episode-podcast-5.webp");
+  }
+  &__cover--6 {
+    background-image: url("../../img/episode-podcast/episode-podcast-6.webp");
   }
 
   &__platforms {
@@ -40,10 +58,10 @@
   }
 
   &__content {
-    max-width: 570px;
-    padding: 17.5px 0;
     position: relative;
     z-index: 3;
+    max-width: 570px;
+    padding: 17.5px 0;
   }
 
   &__row {
@@ -113,9 +131,9 @@
 
   &__tags {
     display: flex;
+    flex-wrap: wrap;
     gap: 6px;
     align-items: center;
-    flex-wrap: wrap;
   }
 
   &__tag {
@@ -160,10 +178,10 @@
     &__buttons {
       flex-direction: column;
     }
-    &__button--play{
+    &__button--play {
       column-gap: 10px;
     }
-    &__tags-text{
+    &__tags-text {
       margin-right: 5px;
     }
   }

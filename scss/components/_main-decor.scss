@@ -1,0 +1,61 @@
+.main-decor {
+  position: relative;
+}
+.main-decor::before,
+.main-decor::after {
+  position: absolute;
+  content: "";
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.main-decor::before {
+  top: -104px;
+  left: -430px;
+  z-index: 1;
+  width: 629px;
+  height: 592px;
+  background-image: url("./../icons/decorations/hero-shapeSwirl.svg");
+}
+
+.main-decor::after {
+  top: 73px;
+  right: -170px;
+  width: 120px;
+  height: 167px;
+  background-image: url("./../icons/decorations/hero-stars-large.svg");
+}
+.main-decor--home::after {
+  right: -25px;
+}
+@media only screen and (max-width: 1024px) {
+  .main-decor::before {
+    top: 41px;
+    left: -73px;
+    width: 168px;
+    height: 147px;
+  }
+
+  .main-decor::after {
+    top: 43px;
+    right: 6px;
+    width: 70px;
+    height: 94px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .main-decor::before {
+    top: 35px;
+    left: -46px;
+    width: 101px;
+    height: 77px;
+  }
+
+  .main-decor::after {
+    top: 33px;
+    right: -2px;
+    width: 45px;
+    height: 59px;
+  }
+}

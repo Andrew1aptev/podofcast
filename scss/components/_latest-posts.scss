@@ -48,12 +48,12 @@
   justify-content: space-between;
   padding-bottom: 20px;
   margin-bottom: 100px;
-  overflow: scroll;
   border-bottom: 1.5px solid black;
 }
 
 @media only screen and (max-width: 768px) {
   .latest-posts__nav {
+    overflow: scroll;
     border-bottom: none;
   }
 }
